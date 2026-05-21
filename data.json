@@ -1,0 +1,295 @@
+{
+    "updated":  "2026-05-21T14:23:18",
+    "lwvr":  {
+                 "inprogress":  [
+                                    {
+                                        "key":  "LWVR-65",
+                                        "summary":  "[TASK] BOM",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "진행 중",
+                                        "duedate":  "2026-01-30",
+                                        "subtasks":  {
+                                                         "done":  3,
+                                                         "total":  3
+                                                     }
+                                    },
+                                    {
+                                        "key":  "LWVR-81",
+                                        "summary":  "-",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "진행 중",
+                                        "duedate":  "2026-02-27",
+                                        "subtasks":  {
+                                                         "done":  0,
+                                                         "total":  0
+                                                     }
+                                    },
+                                    {
+                                        "key":  "LWVR-41",
+                                        "summary":  "[TASK] 광촉매 혼입방지 방안(완료)",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "검토 중",
+                                        "duedate":  "2026-02-27",
+                                        "subtasks":  {
+                                                         "done":  0,
+                                                         "total":  0
+                                                     }
+                                    },
+                                    {
+                                        "key":  "LWVR-116",
+                                        "summary":  "[TASK] LW 광촉매 PROTO SAMPLE 납품(완료)",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "검토 중",
+                                        "duedate":  "2026-03-27",
+                                        "subtasks":  {
+                                                         "done":  2,
+                                                         "total":  2
+                                                     }
+                                    },
+                                    {
+                                        "key":  "LWVR-79",
+                                        "summary":  "[TASK] LW 광촉매 ASS\u0027Y 3D모델링",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "진행 중",
+                                        "duedate":  "2026-05-11",
+                                        "subtasks":  {
+                                                         "done":  3,
+                                                         "total":  3
+                                                     }
+                                    },
+                                    {
+                                        "key":  "LWVR-86",
+                                        "summary":  "[TASK] LW 광촉매 특허 침해 검토",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "진행 중",
+                                        "duedate":  "2026-05-15",
+                                        "subtasks":  {
+                                                         "done":  12,
+                                                         "total":  16
+                                                     }
+                                    },
+                                    {
+                                        "key":  "LWVR-55",
+                                        "summary":  "[TESK] LW 광촉매 ESIR",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "진행 중",
+                                        "duedate":  "2026-05-15",
+                                        "subtasks":  {
+                                                         "done":  7,
+                                                         "total":  13
+                                                     }
+                                    },
+                                    {
+                                        "key":  "LWVR-83",
+                                        "summary":  "[TASK] LW 광촉매 부품도",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "진행 중",
+                                        "duedate":  "2026-05-22",
+                                        "subtasks":  {
+                                                         "done":  0,
+                                                         "total":  4
+                                                     }
+                                    },
+                                    {
+                                        "key":  "LWVR-53",
+                                        "summary":  "[TASK] LW 광촉매 승인도",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "진행 중",
+                                        "duedate":  "2026-05-22",
+                                        "subtasks":  {
+                                                         "done":  4,
+                                                         "total":  5
+                                                     }
+                                    },
+                                    {
+                                        "key":  "LWVR-158",
+                                        "summary":  "[TASK] LW 광촉매 모듈 금형 검토",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "진행 중",
+                                        "duedate":  "2026-05-29",
+                                        "subtasks":  {
+                                                         "done":  0,
+                                                         "total":  4
+                                                     }
+                                    },
+                                    {
+                                        "key":  "LWVR-61",
+                                        "summary":  "[TASK] LW 광촉매 PROTO 대응(완료)",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "검토 중",
+                                        "duedate":  "2026-05-29",
+                                        "subtasks":  {
+                                                         "done":  11,
+                                                         "total":  11
+                                                     }
+                                    },
+                                    {
+                                        "key":  "LWVR-89",
+                                        "summary":  "[TASK] LW 광촉매 VE(완료)",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "검토 중",
+                                        "duedate":  null,
+                                        "subtasks":  {
+                                                         "done":  3,
+                                                         "total":  3
+                                                     }
+                                    },
+                                    {
+                                        "key":  "LWVR-59",
+                                        "summary":  "[TASK] D-FMEA",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "검토 중",
+                                        "duedate":  null,
+                                        "subtasks":  {
+                                                         "done":  null,
+                                                         "total":  1
+                                                     }
+                                    },
+                                    {
+                                        "key":  "LWVR-39",
+                                        "summary":  "[TASK] LW 광촉매 KICK OFF(완료)",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "검토 중",
+                                        "duedate":  null,
+                                        "subtasks":  {
+                                                         "done":  2,
+                                                         "total":  2
+                                                     }
+                                    }
+                                ],
+                 "todo":  [
+                              {
+                                  "key":  "LWVR-63",
+                                  "summary":  "(삭제)",
+                                  "statusCat":  "new",
+                                  "status":  "해야 할 일",
+                                  "duedate":  "2026-05-08",
+                                  "subtasks":  {
+                                                   "done":  0,
+                                                   "total":  0
+                                               }
+                              }
+                          ],
+                 "done":  [
+
+                          ]
+             },
+    "zops":  {
+                 "inprogress":  [
+                                    {
+                                        "key":  "ZOPS-32",
+                                        "summary":  "RS4 광촉매 CARB 인증 현황 자료 작성 및 전자결재 상신 ",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "진행 중",
+                                        "duedate":  "2026-03-11",
+                                        "subtasks":  {
+                                                         "done":  0,
+                                                         "total":  0
+                                                     }
+                                    },
+                                    {
+                                        "key":  "ZOPS-39",
+                                        "summary":  "RS4 광촉매 CARB 인증용 오존시험 샘플 회수",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "진행 중",
+                                        "duedate":  "2026-04-22",
+                                        "subtasks":  {
+                                                         "done":  0,
+                                                         "total":  0
+                                                     }
+                                    },
+                                    {
+                                        "key":  "ZOPS-194",
+                                        "summary":  "RS4 PE 광촉매 미국사양 부품도 작성",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "진행 중",
+                                        "duedate":  "2026-05-15",
+                                        "subtasks":  {
+                                                         "done":  0,
+                                                         "total":  0
+                                                     }
+                                    },
+                                    {
+                                        "key":  "ZOPS-201",
+                                        "summary":  "RS4 광촉매 국내사양 단가 검토 및 자료 회신 (한온시스템)",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "진행 중",
+                                        "duedate":  "2026-05-29",
+                                        "subtasks":  {
+                                                         "done":  0,
+                                                         "total":  0
+                                                     }
+                                    },
+                                    {
+                                        "key":  "ZOPS-195",
+                                        "summary":  "RS4 광촉매 CARB 시험 성적서 수정",
+                                        "statusCat":  "indeterminate",
+                                        "status":  "진행 중",
+                                        "duedate":  "2026-05-29",
+                                        "subtasks":  {
+                                                         "done":  0,
+                                                         "total":  0
+                                                     }
+                                    }
+                                ],
+                 "todo":  [
+                              {
+                                  "key":  "ZOPS-203",
+                                  "summary":  "RS4 샘플 대응 현황 자료 작성",
+                                  "statusCat":  "new",
+                                  "status":  "할 일 (TO DO)",
+                                  "duedate":  "2026-05-15",
+                                  "subtasks":  {
+                                                   "done":  0,
+                                                   "total":  0
+                                               }
+                              },
+                              {
+                                  "key":  "ZOPS-202",
+                                  "summary":  "RS4 샘플 대응 현황 자료 작성",
+                                  "statusCat":  "new",
+                                  "status":  "할 일 (TO DO)",
+                                  "duedate":  "2026-05-15",
+                                  "subtasks":  {
+                                                   "done":  0,
+                                                   "total":  0
+                                               }
+                              },
+                              {
+                                  "key":  "ZOPS-206",
+                                  "summary":  "RS4 광촉매 국내사양 설변 적용 실물 확인 (고객 요청)",
+                                  "statusCat":  "new",
+                                  "status":  "할 일 (TO DO)",
+                                  "duedate":  "2026-05-22",
+                                  "subtasks":  {
+                                                   "done":  0,
+                                                   "total":  0
+                                               }
+                              }
+                          ],
+                 "done":  [
+                              {
+                                  "key":  "ZOPS-200",
+                                  "summary":  "RS4 VR 광촉매 PCB 원자재 정보 확인 (구매1팀 문의)",
+                                  "statusCat":  "done",
+                                  "status":  "완료",
+                                  "duedate":  "2026-05-13",
+                                  "subtasks":  {
+                                                   "done":  0,
+                                                   "total":  0
+                                               }
+                              },
+                              {
+                                  "key":  "ZOPS-205",
+                                  "summary":  "연구소 환경 개선 및 불용자재 폐기",
+                                  "statusCat":  "done",
+                                  "status":  "완료",
+                                  "duedate":  "2026-05-14",
+                                  "subtasks":  {
+                                                   "done":  0,
+                                                   "total":  0
+                                               }
+                              }
+                          ]
+             }
+}
