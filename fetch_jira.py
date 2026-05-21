@@ -1,4 +1,4 @@
-import os, json, base64, urllib.request, urllib.parse
+﻿import os, json, base64, urllib.request, urllib.parse
 from datetime import datetime, timezone
 
 DOMAIN  = os.environ["JIRA_DOMAIN"]
