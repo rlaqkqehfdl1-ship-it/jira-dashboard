@@ -187,9 +187,10 @@ function renderRows(issues, emptyMsg) {
 }
 
 function splitByTitle(active, done) {
+  const isDone = i => i.summary.includes('(완료)') || i.summary.includes('(삭제)');
   return {
-    rest: active.filter(i => !i.summary.includes('(완료)')),
-    done: active.filter(i =>  i.summary.includes('(완료)'))
+    rest: active.filter(i => !isDone(i)),
+    done: active.filter(i =>  isDone(i))
   };
 }
 
