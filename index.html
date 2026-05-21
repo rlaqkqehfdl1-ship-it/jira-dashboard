@@ -39,11 +39,25 @@
   /* 컬럼 헤더 */
   .task-header { display: flex; align-items: center; gap: 10px; padding: 4px 0 8px; border-bottom: 2px solid #DFE1E6; margin-bottom: 2px; }
   .th { font-size: 11px; font-weight: 700; color: #5E6C84; text-transform: uppercase; letter-spacing: .3px; }
+  .th-toggle { width: 18px; flex-shrink: 0; }
   .th-key    { width: 78px; flex-shrink: 0; }
   .th-name   { flex: 1; }
   .th-status { width: 65px; flex-shrink: 0; }
   .th-bar    { width: 220px; flex-shrink: 0; }
   .th-due    { width: 88px; text-align: right; flex-shrink: 0; }
+  /* 토글 버튼 */
+  .toggle-btn       { width: 18px; flex-shrink: 0; cursor: pointer; font-size: 10px; color: #8993A4; text-align: center; user-select: none; }
+  .toggle-btn:hover { color: #0052CC; }
+  .toggle-empty     { width: 18px; flex-shrink: 0; }
+  /* 서브태스크 행 */
+  .sub-rows { display: none; background: #FAFBFC; }
+  .sub-rows.open { display: block; }
+  .sub-row { display: flex; align-items: center; gap: 10px; padding: 5px 0; border-bottom: 1px solid #F4F5F7; padding-left: 4px; }
+  .sub-row:last-child { border-bottom: none; }
+  .sub-indent { width: 18px; flex-shrink: 0; }
+  .sub-key  { font-size: 11px; color: #0052CC; text-decoration: none; font-weight: 600; white-space: nowrap; width: 78px; flex-shrink: 0; }
+  .sub-key:hover { text-decoration: underline; }
+  .sub-name { font-size: 12px; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #42526E; }
   /* 완료 아코디언 */
   .done-section { border-top: 1px solid #F4F5F7; }
   .done-section summary {
@@ -92,7 +106,7 @@
 </div>
 <script>
 const JIRA = 'https://sc-autotech.atlassian.net';
-const TICK = 300;
+const TICK = 60;
 
 function barColor(p) { return p>=100?'#36B37E':p>=60?'#FFAB00':'#FF5630'; }
 
@@ -118,6 +132,7 @@ function dueHtml(d) {
 }
 
 const HEADER = `<div class="task-header">
+  <span class="th th-toggle"></span>
   <span class="th th-key">키</span>
   <span class="th th-name">업무명</span>
   <span class="th th-status">상태</span>
@@ -125,15 +140,40 @@ const HEADER = `<div class="task-header">
   <span class="th th-due">기한</span>
 </div>`;
 
+function toggleSubs(btn) {
+  const row     = btn.closest('.task-row');
+  const subRows = row.nextElementSibling;
+  if (subRows && subRows.classList.contains('sub-rows')) {
+    const open = subRows.classList.toggle('open');
+    btn.textContent = open ? '▼' : '▶';
+  }
+}
+
 function renderRows(issues, emptyMsg) {
   if (!issues||!issues.length) return `<div class="empty">${emptyMsg}</div>`;
-  return HEADER + issues.map(i => `<div class="task-row">
-    <a class="task-key" href="${JIRA}/browse/${i.key}" target="_blank">${i.key}</a>
-    <span class="task-name" title="${i.summary}">${i.summary}</span>
-    ${statusBadge(i.statusCat)}
-    ${barHtml(i.subtasks.done, i.subtasks.total)}
-    ${dueHtml(i.duedate)}
-  </div>`).join('');
+  const rows = issues.map(i => {
+    const items   = (i.subtasks && i.subtasks.items) ? i.subtasks.items : [];
+    const toggler = items.length
+      ? `<span class="toggle-btn" onclick="toggleSubs(this)">▶</span>`
+      : `<span class="toggle-empty"></span>`;
+    const taskRow = `<div class="task-row">
+      ${toggler}
+      <a class="task-key" href="${JIRA}/browse/${i.key}" target="_blank">${i.key}</a>
+      <span class="task-name" title="${i.summary}">${i.summary}</span>
+      ${statusBadge(i.statusCat)}
+      ${barHtml(i.subtasks.done, i.subtasks.total)}
+      ${dueHtml(i.duedate)}
+    </div>`;
+    if (!items.length) return taskRow;
+    const subHtml = items.map(s => `<div class="sub-row">
+      <span class="sub-indent"></span>
+      <a class="sub-key" href="${JIRA}/browse/${s.key}" target="_blank">${s.key}</a>
+      <span class="sub-name" title="${s.summary}">${s.summary}</span>
+      ${statusBadge(s.statusCat)}
+    </div>`).join('');
+    return taskRow + `<div class="sub-rows">${subHtml}</div>`;
+  }).join('');
+  return HEADER + rows;
 }
 
 async function loadData() {

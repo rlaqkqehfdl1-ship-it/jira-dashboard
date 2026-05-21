@@ -1,16 +1,33 @@
-{
-    "updated":  "2026-05-21T14:44:57",
+﻿{
+    "updated":  "2026-05-21T15:15:01",
     "lwvr":  {
                  "inprogress":  [
                                     {
                                         "key":  "LWVR-65",
-                                        "summary":  "[TASK] BOM",
+                                        "summary":  "[TASK] BOM(완료)",
                                         "statusCat":  "indeterminate",
-                                        "status":  "진행 중",
+                                        "status":  "검토 중",
                                         "duedate":  "2026-01-30",
                                         "subtasks":  {
                                                          "done":  3,
-                                                         "total":  3
+                                                         "total":  3,
+                                                         "items":  [
+                                                                       {
+                                                                           "key":  "LWVR-92",
+                                                                           "summary":  "1. LW 광촉매 BOM 업체명 작성",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-95",
+                                                                           "summary":  "2. BOM CASE  재질 추가",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-96",
+                                                                           "summary":  "3. BOM CASE 중량 추가",
+                                                                           "statusCat":  "done"
+                                                                       }
+                                                                   ]
                                                      }
                                     },
                                     {
@@ -21,7 +38,10 @@
                                         "duedate":  "2026-02-27",
                                         "subtasks":  {
                                                          "done":  0,
-                                                         "total":  0
+                                                         "total":  0,
+                                                         "items":  {
+
+                                                                   }
                                                      }
                                     },
                                     {
@@ -32,7 +52,10 @@
                                         "duedate":  "2026-02-27",
                                         "subtasks":  {
                                                          "done":  0,
-                                                         "total":  0
+                                                         "total":  0,
+                                                         "items":  {
+
+                                                                   }
                                                      }
                                     },
                                     {
@@ -43,7 +66,19 @@
                                         "duedate":  "2026-03-27",
                                         "subtasks":  {
                                                          "done":  2,
-                                                         "total":  2
+                                                         "total":  2,
+                                                         "items":  [
+                                                                       {
+                                                                           "key":  "LWVR-118",
+                                                                           "summary":  "2. LW 광촉매 PROTO SAMPLE 납품 (26XXXX_XXEA)",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-117",
+                                                                           "summary":  "1. LW 광촉매 PROTO SAMPLE 납품 (260303_90EA)",
+                                                                           "statusCat":  "done"
+                                                                       }
+                                                                   ]
                                                      }
                                     },
                                     {
@@ -54,7 +89,24 @@
                                         "duedate":  "2026-05-11",
                                         "subtasks":  {
                                                          "done":  3,
-                                                         "total":  3
+                                                         "total":  3,
+                                                         "items":  [
+                                                                       {
+                                                                           "key":  "LWVR-145",
+                                                                           "summary":  "1. LW 광촉매 Assy 모델링 고객 제출(1차)",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-146",
+                                                                           "summary":  "2. LW 광촉매 승인도 수정(마운팅 길이 6mm 증대)",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-147",
+                                                                           "summary":  "3. LW 광촉매 승인도 수정(CASE LWR - 텅그루브 형상 추가)",
+                                                                           "statusCat":  "done"
+                                                                       }
+                                                                   ]
                                                      }
                                     },
                                     {
@@ -65,7 +117,89 @@
                                         "duedate":  "2026-05-15",
                                         "subtasks":  {
                                                          "done":  12,
-                                                         "total":  16
+                                                         "total":  16,
+                                                         "items":  [
+                                                                       {
+                                                                           "key":  "LWVR-119",
+                                                                           "summary":  "4. PCB Silicone Cover 검토",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-120",
+                                                                           "summary":  "3. LED+전자소자 동일면 배치 검토",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-98",
+                                                                           "summary":  "2. 특허 리스크 분석",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-87",
+                                                                           "summary":  "1. LED 대체 검토(OSRAM-LB_P4SG)",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-129",
+                                                                           "summary":  "5. PCB 아트웍(이슬 선임)",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-130",
+                                                                           "summary":  "6. PCB 제작 (한샘)",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-131",
+                                                                           "summary":  "7. Silicone Cover 3D 모델링",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-132",
+                                                                           "summary":  "8. Silicone Cover 목업 제작",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-133",
+                                                                           "summary":  "9. Silicone Cover 조립성 개선 2차 목업 제작",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-134",
+                                                                           "summary":  "10. PC Cover 목업 제작",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-135",
+                                                                           "summary":  "11. Silicone / PC Cover 조립성 검토",
+                                                                           "statusCat":  "new"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-136",
+                                                                           "summary":  "12. Silicone / PC Cover 양산 제작 가능 여부 및 양산 단가 검토",
+                                                                           "statusCat":  "indeterminate"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-137",
+                                                                           "summary":  "13. HALT / HAST 시험 일정 견적 검토",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-138",
+                                                                           "summary":  "14. ES90000-04 고온고습시험(HAST) 진행",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-139",
+                                                                           "summary":  "15. Assy 기본성능 검증 (탈취) ~ 일정 수립중",
+                                                                           "statusCat":  "new"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-140",
+                                                                           "summary":  "16. 제안서 작성 및 고객 협의",
+                                                                           "statusCat":  "indeterminate"
+                                                                       }
+                                                                   ]
                                                      }
                                     },
                                     {
@@ -76,7 +210,74 @@
                                         "duedate":  "2026-05-15",
                                         "subtasks":  {
                                                          "done":  7,
-                                                         "total":  13
+                                                         "total":  13,
+                                                         "items":  [
+                                                                       {
+                                                                           "key":  "LWVR-122",
+                                                                           "summary":  "4. LW 광촉매 DV 평가 항목,일정 정리",
+                                                                           "statusCat":  "indeterminate"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-113",
+                                                                           "summary":  "3. LW 광촉매 EMC TEST PLAN",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-94",
+                                                                           "summary":  "1. LW 광촉매 ES 계획 수립",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-93",
+                                                                           "summary":  "2. LW 광촉매 MS 계획 수립",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-152",
+                                                                           "summary":  "5. 시험 중복 항목 자체 검토",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-153",
+                                                                           "summary":  "6. 시료 / HVAC 필요 수량 검토",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-154",
+                                                                           "summary":  "7. 시험 중복항목 고객 협의",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-155",
+                                                                           "summary":  "8. LW 광촉매 시험 견적 접수",
+                                                                           "statusCat":  "new"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-156",
+                                                                           "summary":  "9. LW 광촉매 시험 품의 작성",
+                                                                           "statusCat":  "new"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-157",
+                                                                           "summary":  "10. LW 광촉매 DV 시험 진행 (8/1~)",
+                                                                           "statusCat":  "new"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-163",
+                                                                           "summary":  "11. LW 광촉매 ESIR 실사",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-164",
+                                                                           "summary":  "12. LW 광촉매 시험소 방문 (유로핀즈)",
+                                                                           "statusCat":  "new"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-165",
+                                                                           "summary":  "13. LW 광촉매 EMC 시험 (6/5~)",
+                                                                           "statusCat":  "new"
+                                                                       }
+                                                                   ]
                                                      }
                                     },
                                     {
@@ -87,7 +288,29 @@
                                         "duedate":  "2026-05-22",
                                         "subtasks":  {
                                                          "done":  0,
-                                                         "total":  4
+                                                         "total":  4,
+                                                         "items":  [
+                                                                       {
+                                                                           "key":  "LWVR-148",
+                                                                           "summary":  "1. Case Upper 부품도",
+                                                                           "statusCat":  "new"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-149",
+                                                                           "summary":  "2. Case Lower 부품도",
+                                                                           "statusCat":  "new"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-150",
+                                                                           "summary":  "3. PC Cover 부품도",
+                                                                           "statusCat":  "new"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-151",
+                                                                           "summary":  "4. Label 부품도",
+                                                                           "statusCat":  "new"
+                                                                       }
+                                                                   ]
                                                      }
                                     },
                                     {
@@ -98,7 +321,34 @@
                                         "duedate":  "2026-05-22",
                                         "subtasks":  {
                                                          "done":  4,
-                                                         "total":  5
+                                                         "total":  5,
+                                                         "items":  [
+                                                                       {
+                                                                           "key":  "LWVR-73",
+                                                                           "summary":  "1. LW 광촉매 승인도 고객 제출(1차)",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-106",
+                                                                           "summary":  "2. LW 광촉매 승인도 수정(마운팅 길이 6mm 증대)",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-99",
+                                                                           "summary":  "3. LW 광촉매 승인도 수정(ES/MS 버전 최신화)",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-121",
+                                                                           "summary":  "4. LW 광촉매 승인도 수정(파장, 광량 표기 제거)",
+                                                                           "statusCat":  "indeterminate"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-97",
+                                                                           "summary":  "5. LW 광촉매 승인도 수정(CASE LWR - 텅그루브 형상 추가)",
+                                                                           "statusCat":  "done"
+                                                                       }
+                                                                   ]
                                                      }
                                     },
                                     {
@@ -109,7 +359,29 @@
                                         "duedate":  "2026-05-29",
                                         "subtasks":  {
                                                          "done":  0,
-                                                         "total":  4
+                                                         "total":  4,
+                                                         "items":  [
+                                                                       {
+                                                                           "key":  "LWVR-159",
+                                                                           "summary":  "1. LW 광촉매 PP-GF30 금형 PP-TD20 시사출 구매팀 문의",
+                                                                           "statusCat":  "indeterminate"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-160",
+                                                                           "summary":  "2. LW 광촉매 재질 베이스 결정 (PP-TD20 vs PP-GF30)",
+                                                                           "statusCat":  "new"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-161",
+                                                                           "summary":  "3. LW 광촉매 금형 유형 검토 (패밀리 vs 개별 - UPR/LWR/PC COVER)",
+                                                                           "statusCat":  "indeterminate"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-162",
+                                                                           "summary":  "4. LW 광촉매 금형 제작 방식 결정 (양산 vs QDM vs 시작)",
+                                                                           "statusCat":  "indeterminate"
+                                                                       }
+                                                                   ]
                                                      }
                                     },
                                     {
@@ -120,7 +392,64 @@
                                         "duedate":  "2026-05-29",
                                         "subtasks":  {
                                                          "done":  11,
-                                                         "total":  11
+                                                         "total":  11,
+                                                         "items":  [
+                                                                       {
+                                                                           "key":  "LWVR-112",
+                                                                           "summary":  "11. LW 광촉매 상대물 커넥터 고객 납품",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-74",
+                                                                           "summary":  "1. LW 광촉매 HVAC 조립성 검토용 SAMPLE ",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-77",
+                                                                           "summary":  "2. LW 광촉매 UPR CASE 양산 금형",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-101",
+                                                                           "summary":  "3. LW 광촉매 UPR CASE 목업",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-103",
+                                                                           "summary":  "4. LW 광촉매 검사지그",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-104",
+                                                                           "summary":  "5. LW 광촉매 UPR CASE QDM 금형",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-105",
+                                                                           "summary":  "6. LW 광촉매 UPR CASE QDM 금형 원소재 수급",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-107",
+                                                                           "summary":  "7. LW 광촉매 PROTO SAMPLE 현황",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-108",
+                                                                           "summary":  "8. LW 광촉매 CASE 가공",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-109",
+                                                                           "summary":  "9. LW 광촉매 PROTO LABEL",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-111",
+                                                                           "summary":  "10. LW 광촉매 PROTO SAMPLE 검사성적서",
+                                                                           "statusCat":  "done"
+                                                                       }
+                                                                   ]
                                                      }
                                     },
                                     {
@@ -131,18 +460,40 @@
                                         "duedate":  null,
                                         "subtasks":  {
                                                          "done":  3,
-                                                         "total":  3
+                                                         "total":  3,
+                                                         "items":  [
+                                                                       {
+                                                                           "key":  "LWVR-91",
+                                                                           "summary":  "1. LW 광촉매 CASE 재질 변경안",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-90",
+                                                                           "summary":  "2. LW 광촉매 Diffuser Lens Insert 사출안",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-100",
+                                                                           "summary":  "3. LW 광촉매 위아 대면 회의",
+                                                                           "statusCat":  "done"
+                                                                       }
+                                                                   ]
                                                      }
                                     },
                                     {
                                         "key":  "LWVR-59",
-                                        "summary":  "[TASK] D-FMEA",
+                                        "summary":  "[TASK] D-FMEA(완료)",
                                         "statusCat":  "indeterminate",
                                         "status":  "검토 중",
                                         "duedate":  null,
                                         "subtasks":  {
                                                          "done":  null,
-                                                         "total":  1
+                                                         "total":  1,
+                                                         "items":  {
+                                                                       "key":  "LWVR-110",
+                                                                       "summary":  "1. LW광촉매 DFMEA",
+                                                                       "statusCat":  "done"
+                                                                   }
                                                      }
                                     },
                                     {
@@ -153,7 +504,19 @@
                                         "duedate":  null,
                                         "subtasks":  {
                                                          "done":  2,
-                                                         "total":  2
+                                                         "total":  2,
+                                                         "items":  [
+                                                                       {
+                                                                           "key":  "LWVR-76",
+                                                                           "summary":  "1. LW 광촉매 제품 사양서 작성",
+                                                                           "statusCat":  "done"
+                                                                       },
+                                                                       {
+                                                                           "key":  "LWVR-72",
+                                                                           "summary":  "2. LW 광촉매 수주 현황 대표님 보고자료 작성",
+                                                                           "statusCat":  "done"
+                                                                       }
+                                                                   ]
                                                      }
                                     }
                                 ],
@@ -166,7 +529,10 @@
                                   "duedate":  "2026-05-08",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               }
                           ],
@@ -179,7 +545,12 @@
                                   "duedate":  "2026-04-03",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  1
+                                                   "total":  1,
+                                                   "items":  {
+                                                                 "key":  "LWVR-126",
+                                                                 "summary":  "ㅇ",
+                                                                 "statusCat":  "indeterminate"
+                                                             }
                                                }
                               }
                           ]
@@ -194,7 +565,10 @@
                                         "duedate":  "2026-03-11",
                                         "subtasks":  {
                                                          "done":  0,
-                                                         "total":  0
+                                                         "total":  0,
+                                                         "items":  {
+
+                                                                   }
                                                      }
                                     },
                                     {
@@ -205,7 +579,10 @@
                                         "duedate":  "2026-04-22",
                                         "subtasks":  {
                                                          "done":  0,
-                                                         "total":  0
+                                                         "total":  0,
+                                                         "items":  {
+
+                                                                   }
                                                      }
                                     },
                                     {
@@ -216,7 +593,10 @@
                                         "duedate":  "2026-05-15",
                                         "subtasks":  {
                                                          "done":  0,
-                                                         "total":  0
+                                                         "total":  0,
+                                                         "items":  {
+
+                                                                   }
                                                      }
                                     },
                                     {
@@ -227,7 +607,10 @@
                                         "duedate":  "2026-05-29",
                                         "subtasks":  {
                                                          "done":  0,
-                                                         "total":  0
+                                                         "total":  0,
+                                                         "items":  {
+
+                                                                   }
                                                      }
                                     },
                                     {
@@ -238,7 +621,10 @@
                                         "duedate":  "2026-05-29",
                                         "subtasks":  {
                                                          "done":  0,
-                                                         "total":  0
+                                                         "total":  0,
+                                                         "items":  {
+
+                                                                   }
                                                      }
                                     }
                                 ],
@@ -251,7 +637,10 @@
                                   "duedate":  "2026-05-15",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -262,7 +651,10 @@
                                   "duedate":  "2026-05-15",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -273,7 +665,10 @@
                                   "duedate":  "2026-05-22",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               }
                           ],
@@ -286,7 +681,10 @@
                                   "duedate":  "2026-05-13",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -297,7 +695,10 @@
                                   "duedate":  "2026-05-14",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -308,7 +709,10 @@
                                   "duedate":  "2026-05-14",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -319,7 +723,10 @@
                                   "duedate":  "2026-04-30",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -330,7 +737,10 @@
                                   "duedate":  "2026-04-03",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -341,7 +751,10 @@
                                   "duedate":  "2026-03-31",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -352,7 +765,10 @@
                                   "duedate":  "2026-03-11",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -363,7 +779,10 @@
                                   "duedate":  "2026-03-13",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -374,7 +793,10 @@
                                   "duedate":  "2026-03-13",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -385,7 +807,10 @@
                                   "duedate":  "2026-05-25",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -396,7 +821,10 @@
                                   "duedate":  "2026-03-04",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -407,7 +835,10 @@
                                   "duedate":  "2026-02-27",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -418,7 +849,10 @@
                                   "duedate":  "2026-02-27",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -429,7 +863,10 @@
                                   "duedate":  "2026-01-12",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -440,7 +877,10 @@
                                   "duedate":  "2026-01-22",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -451,7 +891,10 @@
                                   "duedate":  "2026-01-20",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -462,7 +905,10 @@
                                   "duedate":  "2026-01-14",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -473,7 +919,10 @@
                                   "duedate":  "2026-01-09",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -484,7 +933,10 @@
                                   "duedate":  "2026-01-08",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -495,7 +947,10 @@
                                   "duedate":  "2026-01-09",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -506,7 +961,10 @@
                                   "duedate":  "2026-01-09",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -517,7 +975,10 @@
                                   "duedate":  "2026-01-12",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -528,7 +989,10 @@
                                   "duedate":  "2026-01-09",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               },
                               {
@@ -539,7 +1003,10 @@
                                   "duedate":  "2026-01-05",
                                   "subtasks":  {
                                                    "done":  0,
-                                                   "total":  0
+                                                   "total":  0,
+                                                   "items":  {
+
+                                                             }
                                                }
                               }
                           ]

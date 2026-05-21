@@ -1,4 +1,4 @@
-import os, json, base64, urllib.request, urllib.parse
+﻿import os, json, base64, urllib.request, urllib.parse
 from datetime import datetime, timezone
 
 DOMAIN  = os.environ["JIRA_DOMAIN"].strip()
@@ -21,13 +21,15 @@ def to_issue(i):
     f     = i["fields"]
     subs  = f.get("subtasks") or []
     done  = sum(1 for s in subs if s["fields"]["status"]["statusCategory"]["key"] == "done")
+    items = [{"key": s["key"], "summary": s["fields"]["summary"],
+              "statusCat": s["fields"]["status"]["statusCategory"]["key"]} for s in subs]
     return {
         "key":       i["key"],
         "summary":   f["summary"],
         "statusCat": f["status"]["statusCategory"]["key"],
         "status":    f["status"]["name"],
         "duedate":   f.get("duedate"),
-        "subtasks":  {"done": done, "total": len(subs)}
+        "subtasks":  {"done": done, "total": len(subs), "items": items}
     }
 
 FIELDS = ["summary", "status", "subtasks", "duedate"]
