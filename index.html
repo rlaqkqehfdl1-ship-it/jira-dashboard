@@ -36,6 +36,14 @@
   .task-due { font-size: 12px; color: #6B778C; white-space: nowrap; width: 88px; text-align: right; flex-shrink: 0; }
   .due-soon { color: #FF5630; font-weight: 600; }
   .empty { color: #8993A4; font-size: 13px; padding: 6px 0; }
+  /* 컬럼 헤더 */
+  .task-header { display: flex; align-items: center; gap: 10px; padding: 4px 0 8px; border-bottom: 2px solid #DFE1E6; margin-bottom: 2px; }
+  .th { font-size: 11px; font-weight: 700; color: #5E6C84; text-transform: uppercase; letter-spacing: .3px; }
+  .th-key    { width: 78px; flex-shrink: 0; }
+  .th-name   { flex: 1; }
+  .th-status { width: 65px; flex-shrink: 0; }
+  .th-bar    { width: 220px; flex-shrink: 0; }
+  .th-due    { width: 88px; text-align: right; flex-shrink: 0; }
   /* 완료 아코디언 */
   .done-section { border-top: 1px solid #F4F5F7; }
   .done-section summary {
@@ -109,9 +117,17 @@ function dueHtml(d) {
   return `<span class="task-due ${diff<=3?'due-soon':''}">${d}</span>`;
 }
 
+const HEADER = `<div class="task-header">
+  <span class="th th-key">키</span>
+  <span class="th th-name">업무명</span>
+  <span class="th th-status">상태</span>
+  <span class="th th-bar">진행률</span>
+  <span class="th th-due">기한</span>
+</div>`;
+
 function renderRows(issues, emptyMsg) {
   if (!issues||!issues.length) return `<div class="empty">${emptyMsg}</div>`;
-  return issues.map(i => `<div class="task-row">
+  return HEADER + issues.map(i => `<div class="task-row">
     <a class="task-key" href="${JIRA}/browse/${i.key}" target="_blank">${i.key}</a>
     <span class="task-name" title="${i.summary}">${i.summary}</span>
     ${statusBadge(i.statusCat)}
@@ -126,17 +142,37 @@ async function loadData() {
   return r.json();
 }
 
+// 제목에 (완료) 포함된 항목을 active에서 빼고 done 앞에 추가
+function splitByTitle(active, done) {
+  const titled = active.filter(i => i.summary.includes('(완료)'));
+  const rest   = active.filter(i => !i.summary.includes('(완료)'));
+  return { rest, done: [...titled, ...done] };
+}
+
 async function refresh() {
   try {
     const d = await loadData();
-    document.getElementById('lwvr-ip').innerHTML = renderRows(d.lwvr.inprogress, '진행 중인 업무 없음');
-    document.getElementById('lwvr-td').innerHTML = renderRows(d.lwvr.todo,       '14일 이내 예정 업무 없음');
-    document.getElementById('lwvr-dn').innerHTML       = renderRows(d.lwvr.done, '완료된 업무 없음');
-    document.getElementById('lwvr-done-count').textContent = (d.lwvr.done||[]).length + '개';
-    document.getElementById('zops-ip').innerHTML = renderRows(d.zops.inprogress, '진행 중인 업무 없음');
-    document.getElementById('zops-td').innerHTML = renderRows(d.zops.todo,       '14일 이내 예정 업무 없음');
-    document.getElementById('zops-dn').innerHTML       = renderRows(d.zops.done, '완료된 업무 없음');
-    document.getElementById('zops-done-count').textContent = (d.zops.done||[]).length + '개';
+
+    // LWVR: (완료) 항목 분리
+    const li = splitByTitle(d.lwvr.inprogress, []);
+    const lt = splitByTitle(d.lwvr.todo, []);
+    const lwvrDone = [...li.done, ...lt.done, ...(d.lwvr.done||[])];
+
+    document.getElementById('lwvr-ip').innerHTML = renderRows(li.rest, '진행 중인 업무 없음');
+    document.getElementById('lwvr-td').innerHTML = renderRows(lt.rest, '14일 이내 예정 업무 없음');
+    document.getElementById('lwvr-dn').innerHTML = renderRows(lwvrDone, '완료된 업무 없음');
+    document.getElementById('lwvr-done-count').textContent = lwvrDone.length + '개';
+
+    // ZOPS: (완료) 항목 분리
+    const zi = splitByTitle(d.zops.inprogress, []);
+    const zt = splitByTitle(d.zops.todo, []);
+    const zopsDone = [...zi.done, ...zt.done, ...(d.zops.done||[])];
+
+    document.getElementById('zops-ip').innerHTML = renderRows(zi.rest, '진행 중인 업무 없음');
+    document.getElementById('zops-td').innerHTML = renderRows(zt.rest, '14일 이내 예정 업무 없음');
+    document.getElementById('zops-dn').innerHTML = renderRows(zopsDone, '완료된 업무 없음');
+    document.getElementById('zops-done-count').textContent = zopsDone.length + '개';
+
     document.getElementById('last-updated').textContent = '데이터 기준: ' + d.updated.replace('T',' ');
   } catch(e) {
     document.getElementById('last-updated').textContent = '오류: ' + e.message;
