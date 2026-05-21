@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>업무 현황 모니터링</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F4F5F7; color: #172B4D; }
+  .header { background: #0052CC; color: white; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .header h1 { font-size: 17px; font-weight: 700; }
+  .header-right { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+  .dot { width: 8px; height: 8px; background: #57D9A3; border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:.3;} }
+  .cd-badge { background: rgba(255,255,255,.2); padding: 3px 10px; border-radius: 12px; font-weight: 600; font-size: 12px; }
+  .last-updated { font-size: 12px; color: rgba(255,255,255,.75); }
+  .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+  .project-block { background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); margin-bottom: 20px; overflow: hidden; }
+  .project-title { background: #DEEBFF; color: #0052CC; font-size: 15px; font-weight: 700; padding: 12px 20px; border-bottom: 2px solid #B3D4FF; }
+  .section { padding: 14px 20px; border-bottom: 1px solid #F4F5F7; }
+  .section:last-child { border-bottom: none; }
+  .section-title { font-size: 11px; font-weight: 700; color: #5E6C84; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 10px; }
+  .task-row { display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid #F4F5F7; }
+  .task-row:last-child { border-bottom: none; }
+  .task-key { font-size: 12px; color: #0052CC; text-decoration: none; font-weight: 600; white-space: nowrap; width: 78px; flex-shrink: 0; }
+  .task-key:hover { text-decoration: underline; }
+  .task-name { font-size: 13px; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .task-status { font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 3px; white-space: nowrap; flex-shrink: 0; width: 65px; text-align: center; }
+  .s-prog { background: #DEEBFF; color: #0052CC; }
+  .s-todo { background: #F4F5F7; color: #42526E; }
+  .s-done { background: #E3FCEF; color: #006644; }
+  .bar-wrap { width: 220px; flex-shrink: 0; }
+  .bar-track { background: #DFE1E6; border-radius: 6px; height: 16px; overflow: hidden; margin-bottom: 2px; }
+  .bar-fill { height: 100%; border-radius: 6px; transition: width .6s ease; display: flex; align-items: center; justify-content: flex-end; padding-right: 5px; font-size: 10px; color: white; font-weight: 700; min-width: 2px; }
+  .bar-label { font-size: 11px; color: #6B778C; }
+  .task-due { font-size: 12px; color: #6B778C; white-space: nowrap; width: 88px; text-align: right; flex-shrink: 0; }
+  .due-soon { color: #FF5630; font-weight: 600; }
+  .empty { color: #8993A4; font-size: 13px; padding: 6px 0; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>업무 현황 모니터링</h1>
+  <div class="header-right">
+    <span class="dot"></span>
+    <span id="last-updated" class="last-updated">로딩 중...</span>
+    <span class="cd-badge">갱신까지 <span id="cd">300</span>초</span>
+  </div>
+</div>
+<div class="container">
+  <div class="project-block">
+    <div class="project-title">LWVR — LW 광촉매 프로젝트</div>
+    <div class="section"><div class="section-title">진행 중</div><div id="lwvr-ip"></div></div>
+    <div class="section"><div class="section-title">다음 주 예정 (14일 이내)</div><div id="lwvr-td"></div></div>
+    <div class="section"><div class="section-title">이번 주 완료</div><div id="lwvr-dn"></div></div>
+  </div>
+  <div class="project-block">
+    <div class="project-title">ZOPS — OPS 칸반 보드</div>
+    <div class="section"><div class="section-title">진행 중</div><div id="zops-ip"></div></div>
+    <div class="section"><div class="section-title">다음 주 예정 (14일 이내)</div><div id="zops-td"></div></div>
+    <div class="section"><div class="section-title">이번 주 완료</div><div id="zops-dn"></div></div>
+  </div>
+</div>
+<script>
+const JIRA = 'https://sc-autotech.atlassian.net';
+const TICK = 300;
+
+function barColor(p) { return p>=100?'#36B37E':p>=60?'#FFAB00':'#FF5630'; }
+
+function barHtml(done, total) {
+  const p = total>0 ? Math.round(done/total*100) : 0;
+  const c = total>0 ? barColor(p) : '#DFE1E6';
+  return `<div class="bar-wrap">
+    <div class="bar-track"><div class="bar-fill" style="width:${p}%;background:${c};">${p>=20?p+'%':''}</div></div>
+    <div class="bar-label">${total>0 ? done+'/'+total+' 완료' : '서브태스크 없음'}</div>
+  </div>`;
+}
+
+function statusBadge(cat) {
+  if (cat==='done')          return '<span class="task-status s-done">완료</span>';
+  if (cat==='indeterminate') return '<span class="task-status s-prog">진행 중</span>';
+  return '<span class="task-status s-todo">예정</span>';
+}
+
+function dueHtml(d) {
+  if (!d) return '<span class="task-due">-</span>';
+  const diff = Math.ceil((new Date(d)-new Date())/86400000);
+  return `<span class="task-due ${diff<=3?'due-soon':''}">${d}</span>`;
+}
+
+function renderRows(issues, emptyMsg) {
+  if (!issues||!issues.length) return `<div class="empty">${emptyMsg}</div>`;
+  return issues.map(i => `<div class="task-row">
+    <a class="task-key" href="${JIRA}/browse/${i.key}" target="_blank">${i.key}</a>
+    <span class="task-name" title="${i.summary}">${i.summary}</span>
+    ${statusBadge(i.statusCat)}
+    ${barHtml(i.subtasks.done, i.subtasks.total)}
+    ${dueHtml(i.duedate)}
+  </div>`).join('');
+}
+
+async function loadData() {
+  const r = await fetch('data.json?t=' + Date.now());
+  if (!r.ok) throw new Error(r.status);
+  return r.json();
+}
+
+async function refresh() {
+  try {
+    const d = await loadData();
+    document.getElementById('lwvr-ip').innerHTML = renderRows(d.lwvr.inprogress, '진행 중인 업무 없음');
+    document.getElementById('lwvr-td').innerHTML = renderRows(d.lwvr.todo,       '14일 이내 예정 업무 없음');
+    document.getElementById('lwvr-dn').innerHTML = renderRows(d.lwvr.done,       '이번 주 완료된 업무 없음');
+    document.getElementById('zops-ip').innerHTML = renderRows(d.zops.inprogress, '진행 중인 업무 없음');
+    document.getElementById('zops-td').innerHTML = renderRows(d.zops.todo,       '14일 이내 예정 업무 없음');
+    document.getElementById('zops-dn').innerHTML = renderRows(d.zops.done,       '이번 주 완료된 업무 없음');
+    document.getElementById('last-updated').textContent = '데이터 기준: ' + d.updated.replace('T',' ');
+  } catch(e) {
+    document.getElementById('last-updated').textContent = '오류: ' + e.message;
+  }
+}
+
+let rem = TICK;
+setInterval(() => {
+  rem--;
+  if (rem<=0) { rem=TICK; refresh(); }
+  document.getElementById('cd').textContent = rem;
+}, 1000);
+
+refresh();
+</script>
+</body>
+</html>
