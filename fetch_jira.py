@@ -39,12 +39,12 @@ data = {
     "lwvr": {
         "inprogress": [to_issue(i) for i in search(f'{L} AND statusCategory="In Progress" ORDER BY duedate ASC', FIELDS)],
         "todo":       [to_issue(i) for i in search(f'{L} AND statusCategory="To Do" AND duedate<=14d ORDER BY duedate ASC', FIELDS)],
-        "done":       [to_issue(i) for i in search(f'{L} AND statusCategory=Done AND updated>=-7d ORDER BY updated DESC', FIELDS)]
+        "done":       [to_issue(i) for i in search(f'{L} AND statusCategory=Done ORDER BY updated DESC', FIELDS, 100)]
     },
     "zops": {
         "inprogress": [to_issue(i) for i in search(f'{Z} AND statusCategory="In Progress" ORDER BY duedate ASC', FIELDS)],
         "todo":       [to_issue(i) for i in search(f'{Z} AND statusCategory="To Do" AND duedate<=14d ORDER BY duedate ASC', FIELDS)],
-        "done":       [to_issue(i) for i in search(f'{Z} AND statusCategory=Done AND updated>=-7d ORDER BY updated DESC', FIELDS)]
+        "done":       [to_issue(i) for i in search(f'{Z} AND statusCategory=Done ORDER BY updated DESC', FIELDS, 100)]
     }
 }
 
