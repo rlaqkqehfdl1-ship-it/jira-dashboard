@@ -1,10 +1,10 @@
-﻿import os, json, base64, urllib.request, urllib.parse
+import os, json, base64, urllib.request, urllib.parse
 from datetime import datetime, timezone
 
-DOMAIN  = os.environ["JIRA_DOMAIN"]
-EMAIL   = os.environ["JIRA_EMAIL"]
-TOKEN   = os.environ["JIRA_TOKEN"]
-ACCOUNT = os.environ["JIRA_ACCOUNT_ID"]
+DOMAIN  = os.environ["JIRA_DOMAIN"].strip()
+EMAIL   = os.environ["JIRA_EMAIL"].strip()
+TOKEN   = os.environ["JIRA_TOKEN"].strip()
+ACCOUNT = os.environ["JIRA_ACCOUNT_ID"].strip()
 AUTH    = base64.b64encode(f"{EMAIL}:{TOKEN}".encode()).decode()
 
 def search(jql, fields, max_results=50):
