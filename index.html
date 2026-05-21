@@ -7,40 +7,19 @@
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F4F5F7; color: #172B4D; }
-
-  /* ── 헤더 ── */
   .header { background: #0052CC; color: white; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
   .header h1 { font-size: 17px; font-weight: 700; }
   .header-right { display: flex; align-items: center; gap: 10px; font-size: 13px; }
   .dot { width: 8px; height: 8px; background: #57D9A3; border-radius: 50%; animation: pulse 2s infinite; }
   @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:.3;} }
   .cd-badge { background: rgba(255,255,255,.2); padding: 3px 10px; border-radius: 12px; font-weight: 600; font-size: 12px; }
-  .btn-settings { background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.3); color: white; padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; }
-  .btn-settings:hover { background: rgba(255,255,255,.25); }
-
-  /* ── 설정 모달 ── */
-  .modal-bg { display:none; position:fixed; inset:0; background:rgba(0,0,0,.5); z-index:100; align-items:center; justify-content:center; }
-  .modal-bg.open { display:flex; }
-  .modal { background:white; border-radius:8px; padding:24px; width:420px; box-shadow:0 8px 32px rgba(0,0,0,.2); }
-  .modal h2 { font-size:16px; margin-bottom:16px; color:#172B4D; }
-  .field { margin-bottom:14px; }
-  .field label { display:block; font-size:12px; font-weight:600; color:#5E6C84; margin-bottom:4px; }
-  .field input { width:100%; padding:8px 10px; border:2px solid #DFE1E6; border-radius:4px; font-size:13px; outline:none; }
-  .field input:focus { border-color:#0052CC; }
-  .modal-btns { display:flex; gap:8px; justify-content:flex-end; margin-top:20px; }
-  .btn-save { background:#0052CC; color:white; border:none; padding:8px 18px; border-radius:4px; cursor:pointer; font-size:13px; font-weight:600; }
-  .btn-cancel { background:white; color:#42526E; border:1px solid #DFE1E6; padding:8px 18px; border-radius:4px; cursor:pointer; font-size:13px; }
-  .modal-note { font-size:11px; color:#8993A4; margin-top:10px; line-height:1.5; }
-
-  /* ── 컨테이너 ── */
+  .last-updated { font-size: 12px; color: rgba(255,255,255,.75); }
   .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
   .project-block { background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); margin-bottom: 20px; overflow: hidden; }
   .project-title { background: #DEEBFF; color: #0052CC; font-size: 15px; font-weight: 700; padding: 12px 20px; border-bottom: 2px solid #B3D4FF; }
   .section { padding: 14px 20px; border-bottom: 1px solid #F4F5F7; }
   .section:last-child { border-bottom: none; }
   .section-title { font-size: 11px; font-weight: 700; color: #5E6C84; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 10px; }
-
-  /* ── 태스크 행 ── */
   .task-row { display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid #F4F5F7; }
   .task-row:last-child { border-bottom: none; }
   .task-key { font-size: 12px; color: #0052CC; text-decoration: none; font-weight: 600; white-space: nowrap; width: 78px; flex-shrink: 0; }
@@ -50,212 +29,105 @@
   .s-prog { background: #DEEBFF; color: #0052CC; }
   .s-todo { background: #F4F5F7; color: #42526E; }
   .s-done { background: #E3FCEF; color: #006644; }
-
-  /* ── 진행률 바 ── */
   .bar-wrap { width: 220px; flex-shrink: 0; }
   .bar-track { background: #DFE1E6; border-radius: 6px; height: 16px; overflow: hidden; margin-bottom: 2px; }
   .bar-fill { height: 100%; border-radius: 6px; transition: width .6s ease; display: flex; align-items: center; justify-content: flex-end; padding-right: 5px; font-size: 10px; color: white; font-weight: 700; min-width: 2px; }
   .bar-label { font-size: 11px; color: #6B778C; }
-
   .task-due { font-size: 12px; color: #6B778C; white-space: nowrap; width: 88px; text-align: right; flex-shrink: 0; }
   .due-soon { color: #FF5630; font-weight: 600; }
-
   .empty { color: #8993A4; font-size: 13px; padding: 6px 0; }
-  .no-auth { color: #FF5630; font-size: 13px; padding: 10px; background: #FFEBE6; border-radius: 4px; }
-  .last-updated { font-size: 12px; color: rgba(255,255,255,.75); }
 </style>
 </head>
 <body>
-
-<!-- 헤더 -->
 <div class="header">
   <h1>업무 현황 모니터링</h1>
   <div class="header-right">
     <span class="dot"></span>
-    <span id="last-updated" class="last-updated">초기화 중...</span>
-    <span class="cd-badge">갱신까지 <span id="cd">30</span>초</span>
-    <button class="btn-settings" onclick="openModal()">⚙ 설정</button>
+    <span id="last-updated" class="last-updated">로딩 중...</span>
+    <span class="cd-badge">갱신까지 <span id="cd">300</span>초</span>
   </div>
 </div>
-
-<!-- 설정 모달 -->
-<div class="modal-bg" id="modal">
-  <div class="modal">
-    <h2>Jira 연결 설정</h2>
-    <div class="field">
-      <label>Jira 도메인</label>
-      <input id="cfg-domain" placeholder="your-company.atlassian.net" />
-    </div>
-    <div class="field">
-      <label>이메일</label>
-      <input id="cfg-email" type="email" placeholder="you@company.com" />
-    </div>
-    <div class="field">
-      <label>API 토큰</label>
-      <input id="cfg-token" type="password" placeholder="ATATT3x..." />
-    </div>
-    <div class="field">
-      <label>담당자 Account ID</label>
-      <input id="cfg-account" placeholder="712020:xxxx-xxxx-..." />
-    </div>
-    <p class="modal-note">입력 정보는 이 브라우저의 localStorage에만 저장되며 외부로 전송되지 않습니다.</p>
-    <div class="modal-btns">
-      <button class="btn-cancel" onclick="closeModal()">취소</button>
-      <button class="btn-save" onclick="saveConfig()">저장 &amp; 갱신</button>
-    </div>
-  </div>
-</div>
-
-<!-- 대시보드 본문 -->
 <div class="container">
   <div class="project-block">
     <div class="project-title">LWVR — LW 광촉매 프로젝트</div>
-    <div class="section"><div class="section-title">진행 중</div><div id="lwvr-ip"><div class="empty">로딩 중...</div></div></div>
-    <div class="section"><div class="section-title">다음 주 예정 (14일 이내)</div><div id="lwvr-td"><div class="empty">로딩 중...</div></div></div>
-    <div class="section"><div class="section-title">이번 주 완료</div><div id="lwvr-dn"><div class="empty">로딩 중...</div></div></div>
+    <div class="section"><div class="section-title">진행 중</div><div id="lwvr-ip"></div></div>
+    <div class="section"><div class="section-title">다음 주 예정 (14일 이내)</div><div id="lwvr-td"></div></div>
+    <div class="section"><div class="section-title">이번 주 완료</div><div id="lwvr-dn"></div></div>
   </div>
   <div class="project-block">
     <div class="project-title">ZOPS — OPS 칸반 보드</div>
-    <div class="section"><div class="section-title">진행 중</div><div id="zops-ip"><div class="empty">로딩 중...</div></div></div>
-    <div class="section"><div class="section-title">다음 주 예정 (14일 이내)</div><div id="zops-td"><div class="empty">로딩 중...</div></div></div>
-    <div class="section"><div class="section-title">이번 주 완료</div><div id="zops-dn"><div class="empty">로딩 중...</div></div></div>
+    <div class="section"><div class="section-title">진행 중</div><div id="zops-ip"></div></div>
+    <div class="section"><div class="section-title">다음 주 예정 (14일 이내)</div><div id="zops-td"></div></div>
+    <div class="section"><div class="section-title">이번 주 완료</div><div id="zops-dn"></div></div>
   </div>
 </div>
-
 <script>
-// ── 설정 관리 ──────────────────────────────────────────────────
-const LS_KEY = 'jira_cfg';
-let CFG = {};
+const JIRA = 'https://sc-autotech.atlassian.net';
+const TICK = 300;
 
-function loadConfig() {
-  try { CFG = JSON.parse(localStorage.getItem(LS_KEY) || '{}'); } catch(e) { CFG = {}; }
-}
-function saveConfig() {
-  CFG = {
-    domain:  document.getElementById('cfg-domain').value.trim(),
-    email:   document.getElementById('cfg-email').value.trim(),
-    token:   document.getElementById('cfg-token').value.trim(),
-    account: document.getElementById('cfg-account').value.trim()
-  };
-  localStorage.setItem(LS_KEY, JSON.stringify(CFG));
-  closeModal();
-  refresh();
-}
-function openModal() {
-  loadConfig();
-  document.getElementById('cfg-domain').value  = CFG.domain  || '';
-  document.getElementById('cfg-email').value   = CFG.email   || '';
-  document.getElementById('cfg-token').value   = CFG.token   || '';
-  document.getElementById('cfg-account').value = CFG.account || '';
-  document.getElementById('modal').classList.add('open');
-}
-function closeModal() { document.getElementById('modal').classList.remove('open'); }
-
-// ── API ─────────────────────────────────────────────────────────
-async function api(jql, fields, max) {
-  if (!CFG.domain || !CFG.email || !CFG.token) throw new Error('설정 필요');
-  const auth = 'Basic ' + btoa(CFG.email + ':' + CFG.token);
-  const r = await fetch('https://' + CFG.domain + '/rest/api/3/search/jql', {
-    method: 'POST',
-    headers: { 'Authorization': auth, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ jql, fields: fields || [], maxResults: max || 50 })
-  });
-  if (!r.ok) throw new Error('API ' + r.status);
-  return r.json();
-}
-
-// ── 렌더링 ──────────────────────────────────────────────────────
-function barColor(p) { return p >= 100 ? '#36B37E' : p >= 60 ? '#FFAB00' : '#FF5630'; }
+function barColor(p) { return p>=100?'#36B37E':p>=60?'#FFAB00':'#FF5630'; }
 
 function barHtml(done, total) {
-  const p = total > 0 ? Math.round(done / total * 100) : 0;
-  const c = total > 0 ? barColor(p) : '#DFE1E6';
-  const label = total > 0 ? done + '/' + total + ' 완료' : '서브태스크 없음';
+  const p = total>0 ? Math.round(done/total*100) : 0;
+  const c = total>0 ? barColor(p) : '#DFE1E6';
   return `<div class="bar-wrap">
-    <div class="bar-track"><div class="bar-fill" style="width:${p}%;background:${c};">${p >= 20 ? p + '%' : ''}</div></div>
-    <div class="bar-label">${label}</div>
+    <div class="bar-track"><div class="bar-fill" style="width:${p}%;background:${c};">${p>=20?p+'%':''}</div></div>
+    <div class="bar-label">${total>0 ? done+'/'+total+' 완료' : '서브태스크 없음'}</div>
   </div>`;
 }
 
 function statusBadge(cat) {
-  if (cat === 'done')          return '<span class="task-status s-done">완료</span>';
-  if (cat === 'indeterminate') return '<span class="task-status s-prog">진행 중</span>';
+  if (cat==='done')          return '<span class="task-status s-done">완료</span>';
+  if (cat==='indeterminate') return '<span class="task-status s-prog">진행 중</span>';
   return '<span class="task-status s-todo">예정</span>';
 }
 
 function dueHtml(d) {
   if (!d) return '<span class="task-due">-</span>';
-  const diff = Math.ceil((new Date(d) - new Date()) / 86400000);
-  return `<span class="task-due ${diff <= 3 ? 'due-soon' : ''}">${d}</span>`;
+  const diff = Math.ceil((new Date(d)-new Date())/86400000);
+  return `<span class="task-due ${diff<=3?'due-soon':''}">${d}</span>`;
 }
 
 function renderRows(issues, emptyMsg) {
-  if (!issues.length) return `<div class="empty">${emptyMsg}</div>`;
-  return issues.map(i => {
-    const f    = i.fields;
-    const subs = f.subtasks || [];
-    const done = subs.filter(s => s.fields.status.statusCategory.key === 'done').length;
-    const base = CFG.domain ? 'https://' + CFG.domain : '#';
-    return `<div class="task-row">
-      <a class="task-key" href="${base}/browse/${i.key}" target="_blank">${i.key}</a>
-      <span class="task-name" title="${f.summary}">${f.summary}</span>
-      ${statusBadge(f.status.statusCategory.key)}
-      ${barHtml(done, subs.length)}
-      ${dueHtml(f.duedate)}
-    </div>`;
-  }).join('');
+  if (!issues||!issues.length) return `<div class="empty">${emptyMsg}</div>`;
+  return issues.map(i => `<div class="task-row">
+    <a class="task-key" href="${JIRA}/browse/${i.key}" target="_blank">${i.key}</a>
+    <span class="task-name" title="${i.summary}">${i.summary}</span>
+    ${statusBadge(i.statusCat)}
+    ${barHtml(i.subtasks.done, i.subtasks.total)}
+    ${dueHtml(i.duedate)}
+  </div>`).join('');
 }
 
-// ── 갱신 ────────────────────────────────────────────────────────
+async function loadData() {
+  const r = await fetch('data.json?t=' + Date.now());
+  if (!r.ok) throw new Error(r.status);
+  return r.json();
+}
+
 async function refresh() {
-  document.getElementById('last-updated').textContent = '갱신 중...';
-  if (!CFG.domain || !CFG.email || !CFG.token || !CFG.account) {
-    ['lwvr-ip','lwvr-td','lwvr-dn','zops-ip','zops-td','zops-dn'].forEach(id => {
-      document.getElementById(id).innerHTML = '<div class="no-auth">⚙ 우측 상단 [설정] 버튼에서 Jira 연결 정보를 입력하세요.</div>';
-    });
-    document.getElementById('last-updated').textContent = '설정 필요';
-    return;
-  }
   try {
-    const A  = CFG.account;
-    const lB = `project=LWVR AND issuetype="TASK _ SC" AND assignee="${A}"`;
-    const zB = `project=ZOPS AND assignee="${A}"`;
-    const F  = ['summary','status','subtasks','duedate'];
-
-    const [li,lt,ld,zi,zt,zd] = await Promise.all([
-      api(`${lB} AND statusCategory="In Progress" ORDER BY duedate ASC`, F),
-      api(`${lB} AND statusCategory="To Do" AND duedate<=14d ORDER BY duedate ASC`, F),
-      api(`${lB} AND statusCategory=Done AND updated>=-7d ORDER BY updated DESC`, F),
-      api(`${zB} AND statusCategory="In Progress" ORDER BY duedate ASC`, F),
-      api(`${zB} AND statusCategory="To Do" AND duedate<=14d ORDER BY duedate ASC`, F),
-      api(`${zB} AND statusCategory=Done AND updated>=-7d ORDER BY updated DESC`, F),
-    ]);
-
-    document.getElementById('lwvr-ip').innerHTML = renderRows(li.issues, '진행 중인 업무 없음');
-    document.getElementById('lwvr-td').innerHTML = renderRows(lt.issues, '14일 이내 예정 업무 없음');
-    document.getElementById('lwvr-dn').innerHTML = renderRows(ld.issues, '이번 주 완료된 업무 없음');
-    document.getElementById('zops-ip').innerHTML = renderRows(zi.issues, '진행 중인 업무 없음');
-    document.getElementById('zops-td').innerHTML = renderRows(zt.issues, '14일 이내 예정 업무 없음');
-    document.getElementById('zops-dn').innerHTML = renderRows(zd.issues, '이번 주 완료된 업무 없음');
-
-    document.getElementById('last-updated').textContent = '마지막 갱신: ' + new Date().toLocaleTimeString('ko-KR');
+    const d = await loadData();
+    document.getElementById('lwvr-ip').innerHTML = renderRows(d.lwvr.inprogress, '진행 중인 업무 없음');
+    document.getElementById('lwvr-td').innerHTML = renderRows(d.lwvr.todo,       '14일 이내 예정 업무 없음');
+    document.getElementById('lwvr-dn').innerHTML = renderRows(d.lwvr.done,       '이번 주 완료된 업무 없음');
+    document.getElementById('zops-ip').innerHTML = renderRows(d.zops.inprogress, '진행 중인 업무 없음');
+    document.getElementById('zops-td').innerHTML = renderRows(d.zops.todo,       '14일 이내 예정 업무 없음');
+    document.getElementById('zops-dn').innerHTML = renderRows(d.zops.done,       '이번 주 완료된 업무 없음');
+    document.getElementById('last-updated').textContent = '데이터 기준: ' + d.updated.replace('T',' ');
   } catch(e) {
     document.getElementById('last-updated').textContent = '오류: ' + e.message;
   }
 }
 
-// ── 카운트다운 ───────────────────────────────────────────────────
-let rem = 30;
+let rem = TICK;
 setInterval(() => {
   rem--;
-  if (rem <= 0) { rem = 30; refresh(); }
+  if (rem<=0) { rem=TICK; refresh(); }
   document.getElementById('cd').textContent = rem;
 }, 1000);
 
-// ── 초기 실행 ────────────────────────────────────────────────────
-loadConfig();
-if (!CFG.domain) openModal();
-else refresh();
+refresh();
 </script>
 </body>
 </html>
