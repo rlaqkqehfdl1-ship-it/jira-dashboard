@@ -1,4 +1,4 @@
-﻿import os, json, base64, urllib.request, urllib.parse
+import os, json, base64, urllib.request
 from datetime import datetime, timezone
 
 DOMAIN  = os.environ["JIRA_DOMAIN"].strip()
@@ -11,21 +11,34 @@ def search(jql, fields, max_results=50):
     url  = f"https://{DOMAIN}/rest/api/3/search/jql"
     body = json.dumps({"jql": jql, "fields": fields, "maxResults": max_results}).encode()
     req  = urllib.request.Request(url, data=body, method="POST", headers={
-        "Authorization": f"Basic {AUTH}",
-        "Content-Type":  "application/json"
+        "Authorization": f"Basic {AUTH}", "Content-Type": "application/json"
     })
     with urllib.request.urlopen(req) as r:
         return json.loads(r.read())["issues"]
 
-def to_issue(i):
-    f     = i["fields"]
-    subs  = f.get("subtasks") or []
-    done  = sum(1 for s in subs if s["fields"]["status"]["statusCategory"]["key"] == "done")
-    items = [{"key": s["key"], "summary": s["fields"]["summary"],
-              "statusCat": s["fields"]["status"]["statusCategory"]["key"]} for s in subs]
+# 서브태스크 기한 맵 (key → duedate) - 별도 조회
+def build_sub_due_map(project):
+    try:
+        subs = search(
+            f'project={project} AND issuetype="프로젝트 SUBTASK"',
+            ["duedate"], 500
+        )
+        return {s["key"]: s["fields"].get("duedate") for s in subs}
+    except:
+        return {}
+
+def to_issue(i, sub_due_map=None):
+    f    = i["fields"]
+    subs = f.get("subtasks") or []
+    done = sum(1 for s in subs if s["fields"]["status"]["statusCategory"]["key"] == "done")
+    items = [{
+        "key":       s["key"],
+        "summary":   s["fields"]["summary"],
+        "statusCat": s["fields"]["status"]["statusCategory"]["key"],
+        "duedate":   (sub_due_map or {}).get(s["key"])
+    } for s in subs]
     return {
-        "key":       i["key"],
-        "summary":   f["summary"],
+        "key": i["key"], "summary": f["summary"],
         "statusCat": f["status"]["statusCategory"]["key"],
         "status":    f["status"]["name"],
         "duedate":   f.get("duedate"),
@@ -36,17 +49,20 @@ FIELDS = ["summary", "status", "subtasks", "duedate"]
 L = f'project=LWVR AND issuetype="TASK _ SC" AND assignee="{ACCOUNT}"'
 Z = f'project=ZOPS AND assignee="{ACCOUNT}"'
 
+lwvr_sub_due = build_sub_due_map("LWVR")
+zops_sub_due = build_sub_due_map("ZOPS")
+
 data = {
     "updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S"),
     "lwvr": {
-        "inprogress": [to_issue(i) for i in search(f'{L} AND statusCategory="In Progress" ORDER BY duedate ASC', FIELDS)],
-        "todo":       [to_issue(i) for i in search(f'{L} AND statusCategory="To Do" AND duedate<=14d ORDER BY duedate ASC', FIELDS)],
-        "done":       [to_issue(i) for i in search(f'{L} AND statusCategory=Done ORDER BY updated DESC', FIELDS, 100)]
+        "inprogress": [to_issue(i, lwvr_sub_due) for i in search(f'{L} AND statusCategory="In Progress" ORDER BY duedate ASC', FIELDS)],
+        "todo":       [to_issue(i, lwvr_sub_due) for i in search(f'{L} AND statusCategory="To Do" AND duedate<=14d ORDER BY duedate ASC', FIELDS)],
+        "done":       [to_issue(i, lwvr_sub_due) for i in search(f'{L} AND statusCategory=Done ORDER BY updated DESC', FIELDS, 100)]
     },
     "zops": {
-        "inprogress": [to_issue(i) for i in search(f'{Z} AND statusCategory="In Progress" ORDER BY duedate ASC', FIELDS)],
-        "todo":       [to_issue(i) for i in search(f'{Z} AND statusCategory="To Do" AND duedate<=14d ORDER BY duedate ASC', FIELDS)],
-        "done":       [to_issue(i) for i in search(f'{Z} AND statusCategory=Done ORDER BY updated DESC', FIELDS, 100)]
+        "inprogress": [to_issue(i, zops_sub_due) for i in search(f'{Z} AND statusCategory="In Progress" ORDER BY duedate ASC', FIELDS)],
+        "todo":       [to_issue(i, zops_sub_due) for i in search(f'{Z} AND statusCategory="To Do" AND duedate<=14d ORDER BY duedate ASC', FIELDS)],
+        "done":       [to_issue(i, zops_sub_due) for i in search(f'{Z} AND statusCategory=Done ORDER BY updated DESC', FIELDS, 100)]
     }
 }
 
