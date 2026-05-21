@@ -6,73 +6,80 @@
 <title>업무 현황 모니터링</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F4F5F7; color: #172B4D; }
-  .header { background: #0052CC; color: white; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
-  .header h1 { font-size: 17px; font-weight: 700; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0D1117; color: #E6EDF3; }
+
+  /* ── 헤더 ── */
+  .header { background: #161B22; border-bottom: 1px solid #30363D; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .header h1 { font-size: 17px; font-weight: 700; color: #F0F6FC; }
   .header-right { display: flex; align-items: center; gap: 10px; font-size: 13px; }
-  .dot { width: 8px; height: 8px; background: #57D9A3; border-radius: 50%; animation: pulse 2s infinite; }
+  .dot { width: 8px; height: 8px; background: #3FB950; border-radius: 50%; animation: pulse 2s infinite; flex-shrink: 0; }
   @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:.3;} }
-  .cd-badge { background: rgba(255,255,255,.2); padding: 3px 10px; border-radius: 12px; font-weight: 600; font-size: 12px; }
-  .last-updated { font-size: 12px; color: rgba(255,255,255,.75); }
+  .cd-badge { background: #21262D; border: 1px solid #30363D; color: #8B949E; padding: 3px 10px; border-radius: 12px; font-weight: 600; font-size: 12px; }
+  .last-updated { font-size: 12px; color: #8B949E; }
+
+  /* ── 카드 ── */
   .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
-  .project-block { background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); margin-bottom: 20px; overflow: hidden; }
-  .project-title { background: #DEEBFF; color: #0052CC; font-size: 15px; font-weight: 700; padding: 12px 20px; border-bottom: 2px solid #B3D4FF; }
-  .section { padding: 14px 20px; border-bottom: 1px solid #F4F5F7; }
+  .project-block { background: #161B22; border: 1px solid #30363D; border-radius: 8px; margin-bottom: 20px; overflow: hidden; }
+  .project-title { background: #1C2128; color: #58A6FF; font-size: 15px; font-weight: 700; padding: 12px 20px; border-bottom: 1px solid #30363D; }
+  .section { padding: 14px 20px; border-bottom: 1px solid #21262D; }
   .section:last-child { border-bottom: none; }
-  .section-title { font-size: 11px; font-weight: 700; color: #5E6C84; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 10px; }
-  .task-row { display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid #F4F5F7; }
-  .task-row:last-child { border-bottom: none; }
-  .task-key { font-size: 12px; color: #0052CC; text-decoration: none; font-weight: 600; white-space: nowrap; width: 78px; flex-shrink: 0; }
-  .task-key:hover { text-decoration: underline; }
-  .task-name { font-size: 13px; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .task-status { font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 3px; white-space: nowrap; flex-shrink: 0; width: 65px; text-align: center; }
-  .s-prog { background: #DEEBFF; color: #0052CC; }
-  .s-todo { background: #F4F5F7; color: #42526E; }
-  .s-done { background: #E3FCEF; color: #006644; }
-  .bar-wrap { width: 220px; flex-shrink: 0; }
-  .bar-track { background: #DFE1E6; border-radius: 6px; height: 16px; overflow: hidden; margin-bottom: 2px; }
-  .bar-fill { height: 100%; border-radius: 6px; transition: width .6s ease; display: flex; align-items: center; justify-content: flex-end; padding-right: 5px; font-size: 10px; color: white; font-weight: 700; min-width: 2px; }
-  .bar-label { font-size: 11px; color: #6B778C; }
-  .task-due { font-size: 12px; color: #6B778C; white-space: nowrap; width: 88px; text-align: right; flex-shrink: 0; }
-  .due-soon { color: #FF5630; font-weight: 600; }
-  .empty { color: #8993A4; font-size: 13px; padding: 6px 0; }
-  /* 컬럼 헤더 */
-  .task-header { display: flex; align-items: center; gap: 10px; padding: 4px 0 8px; border-bottom: 2px solid #DFE1E6; margin-bottom: 2px; }
-  .th { font-size: 11px; font-weight: 700; color: #5E6C84; text-transform: uppercase; letter-spacing: .3px; }
+  .section-title { font-size: 11px; font-weight: 700; color: #6E7681; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 10px; }
+
+  /* ── 컬럼 헤더 ── */
+  .task-header { display: flex; align-items: center; gap: 10px; padding: 4px 0 8px; border-bottom: 1px solid #30363D; margin-bottom: 2px; }
+  .th { font-size: 11px; font-weight: 700; color: #6E7681; text-transform: uppercase; letter-spacing: .3px; }
   .th-toggle { width: 18px; flex-shrink: 0; }
   .th-key    { width: 78px; flex-shrink: 0; }
   .th-name   { flex: 1; }
   .th-status { width: 65px; flex-shrink: 0; }
-  .th-bar    { width: 220px; flex-shrink: 0; }
+  .th-bar    { width: 200px; flex-shrink: 0; }
   .th-due    { width: 88px; text-align: right; flex-shrink: 0; }
-  /* 토글 버튼 */
-  .toggle-btn       { width: 18px; flex-shrink: 0; cursor: pointer; font-size: 10px; color: #8993A4; text-align: center; user-select: none; }
-  .toggle-btn:hover { color: #0052CC; }
-  .toggle-empty     { width: 18px; flex-shrink: 0; }
-  /* 서브태스크 행 */
-  .sub-rows { display: none; background: #FAFBFC; }
+
+  /* ── 태스크 행 ── */
+  .task-row { display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid #21262D; }
+  .task-row:last-child { border-bottom: none; }
+  .toggle-btn   { width: 18px; flex-shrink: 0; cursor: pointer; font-size: 10px; color: #6E7681; text-align: center; user-select: none; }
+  .toggle-btn:hover { color: #58A6FF; }
+  .toggle-empty { width: 18px; flex-shrink: 0; }
+  .task-key  { font-size: 12px; color: #58A6FF; text-decoration: none; font-weight: 600; white-space: nowrap; width: 78px; flex-shrink: 0; }
+  .task-key:hover { text-decoration: underline; }
+  .task-name { font-size: 13px; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #E6EDF3; }
+  .task-status { font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 3px; white-space: nowrap; flex-shrink: 0; width: 65px; text-align: center; }
+  .s-prog { background: #0D2137; color: #79C0FF; }
+  .s-todo { background: #21262D; color: #8B949E; }
+  .s-done { background: #0A2A1A; color: #3FB950; }
+  .task-due { font-size: 12px; color: #8B949E; white-space: nowrap; width: 88px; text-align: right; flex-shrink: 0; }
+  .due-soon  { color: #F85149; font-weight: 600; }
+
+  /* ── 진행률 바 ── */
+  .bar-wrap  { width: 200px; flex-shrink: 0; }
+  .bar-track { background: #21262D; border-radius: 6px; height: 14px; overflow: hidden; margin-bottom: 2px; }
+  .bar-fill  { height: 100%; border-radius: 6px; transition: width .6s ease; display: flex; align-items: center; justify-content: flex-end; padding-right: 5px; font-size: 10px; color: #fff; font-weight: 700; min-width: 2px; }
+  .bar-label { font-size: 11px; color: #6E7681; }
+
+  /* ── 서브태스크 ── */
+  .sub-rows { display: none; background: #0D1117; border-top: 1px solid #21262D; }
   .sub-rows.open { display: block; }
-  .sub-row { display: flex; align-items: center; gap: 10px; padding: 5px 0; border-bottom: 1px solid #F4F5F7; padding-left: 4px; }
+  .sub-row { display: flex; align-items: center; gap: 10px; padding: 6px 0 6px 4px; border-bottom: 1px solid #1C2128; }
   .sub-row:last-child { border-bottom: none; }
   .sub-indent { width: 18px; flex-shrink: 0; }
-  .sub-key  { font-size: 11px; color: #0052CC; text-decoration: none; font-weight: 600; white-space: nowrap; width: 78px; flex-shrink: 0; }
+  .sub-key  { font-size: 11px; color: #58A6FF; text-decoration: none; font-weight: 600; white-space: nowrap; width: 78px; flex-shrink: 0; }
   .sub-key:hover { text-decoration: underline; }
-  .sub-name { font-size: 12px; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #42526E; }
-  /* 완료 아코디언 */
-  .done-section { border-top: 1px solid #F4F5F7; }
-  .done-section summary {
-    list-style: none; cursor: pointer; padding: 12px 20px;
-    display: flex; align-items: center; gap: 8px;
-    font-size: 11px; font-weight: 700; color: #5E6C84;
-    text-transform: uppercase; letter-spacing: .5px;
-    user-select: none;
-  }
+  .sub-name { font-size: 12px; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #C9D1D9; }
+  .sub-due  { font-size: 11px; color: #8B949E; white-space: nowrap; width: 88px; text-align: right; flex-shrink: 0; }
+  .sub-due.soon { color: #F85149; font-weight: 600; }
+
+  /* ── 완료 아코디언 ── */
+  .done-section { border-top: 1px solid #21262D; }
+  .done-section summary { list-style: none; cursor: pointer; padding: 12px 20px; display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; color: #6E7681; text-transform: uppercase; letter-spacing: .5px; user-select: none; }
   .done-section summary::-webkit-details-marker { display: none; }
-  .done-section summary:hover { background: #F4F5F7; }
-  .done-arrow { font-size: 10px; transition: transform .2s; color: #8993A4; }
+  .done-section summary:hover { background: #1C2128; }
+  .done-arrow { font-size: 10px; transition: transform .2s; color: #6E7681; }
   .done-section[open] .done-arrow { transform: rotate(90deg); }
-  .done-count { background: #E3FCEF; color: #006644; font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+  .done-count { background: #0A2A1A; color: #3FB950; font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
   .done-content { padding: 0 20px 12px; }
+
+  .empty { color: #6E7681; font-size: 13px; padding: 6px 0; }
 </style>
 </head>
 <body>
@@ -81,7 +88,7 @@
   <div class="header-right">
     <span class="dot"></span>
     <span id="last-updated" class="last-updated">로딩 중...</span>
-    <span class="cd-badge">갱신까지 <span id="cd">300</span>초</span>
+    <span class="cd-badge">갱신까지 <span id="cd">60</span>초</span>
   </div>
 </div>
 <div class="container">
@@ -108,11 +115,11 @@
 const JIRA = 'https://sc-autotech.atlassian.net';
 const TICK = 60;
 
-function barColor(p) { return p>=100?'#36B37E':p>=60?'#FFAB00':'#FF5630'; }
+function barColor(p) { return p>=100?'#3FB950':p>=60?'#D29922':'#F85149'; }
 
 function barHtml(done, total) {
   const p = total>0 ? Math.round(done/total*100) : 0;
-  const c = total>0 ? barColor(p) : '#DFE1E6';
+  const c = total>0 ? barColor(p) : '#21262D';
   return `<div class="bar-wrap">
     <div class="bar-track"><div class="bar-fill" style="width:${p}%;background:${c};">${p>=20?p+'%':''}</div></div>
     <div class="bar-label">${total>0 ? done+'/'+total+' 완료' : '서브태스크 없음'}</div>
@@ -125,10 +132,20 @@ function statusBadge(cat) {
   return '<span class="task-status s-todo">예정</span>';
 }
 
-function dueHtml(d) {
-  if (!d) return '<span class="task-due">-</span>';
+function dueHtml(d, cls='task-due') {
+  if (!d) return `<span class="${cls}">-</span>`;
   const diff = Math.ceil((new Date(d)-new Date())/86400000);
-  return `<span class="task-due ${diff<=3?'due-soon':''}">${d}</span>`;
+  const soon = diff<=3 ? (cls==='sub-due' ? 'soon' : 'due-soon') : '';
+  return `<span class="${cls} ${soon}">${d}</span>`;
+}
+
+function toggleSubs(btn) {
+  const row     = btn.closest('.task-row');
+  const subRows = row.nextElementSibling;
+  if (subRows && subRows.classList.contains('sub-rows')) {
+    const open = subRows.classList.toggle('open');
+    btn.textContent = open ? '▼' : '▶';
+  }
 }
 
 const HEADER = `<div class="task-header">
@@ -139,15 +156,6 @@ const HEADER = `<div class="task-header">
   <span class="th th-bar">진행률</span>
   <span class="th th-due">기한</span>
 </div>`;
-
-function toggleSubs(btn) {
-  const row     = btn.closest('.task-row');
-  const subRows = row.nextElementSibling;
-  if (subRows && subRows.classList.contains('sub-rows')) {
-    const open = subRows.classList.toggle('open');
-    btn.textContent = open ? '▼' : '▶';
-  }
-}
 
 function renderRows(issues, emptyMsg) {
   if (!issues||!issues.length) return `<div class="empty">${emptyMsg}</div>`;
@@ -170,44 +178,38 @@ function renderRows(issues, emptyMsg) {
       <a class="sub-key" href="${JIRA}/browse/${s.key}" target="_blank">${s.key}</a>
       <span class="sub-name" title="${s.summary}">${s.summary}</span>
       ${statusBadge(s.statusCat)}
+      <span class="th th-bar"></span>
+      ${dueHtml(s.duedate, 'sub-due')}
     </div>`).join('');
     return taskRow + `<div class="sub-rows">${subHtml}</div>`;
   }).join('');
   return HEADER + rows;
 }
 
-async function loadData() {
-  const r = await fetch('data.json?t=' + Date.now());
-  if (!r.ok) throw new Error(r.status);
-  return r.json();
-}
-
-// 제목에 (완료) 포함된 항목을 active에서 빼고 done 앞에 추가
 function splitByTitle(active, done) {
-  const titled = active.filter(i => i.summary.includes('(완료)'));
-  const rest   = active.filter(i => !i.summary.includes('(완료)'));
-  return { rest, done: [...titled, ...done] };
+  return {
+    rest: active.filter(i => !i.summary.includes('(완료)')),
+    done: active.filter(i =>  i.summary.includes('(완료)'))
+  };
 }
 
 async function refresh() {
   try {
-    const d = await loadData();
+    const r = await fetch('data.json?t=' + Date.now());
+    if (!r.ok) throw new Error(r.status);
+    const d = await r.json();
 
-    // LWVR: (완료) 항목 분리
     const li = splitByTitle(d.lwvr.inprogress, []);
     const lt = splitByTitle(d.lwvr.todo, []);
     const lwvrDone = [...li.done, ...lt.done, ...(d.lwvr.done||[])];
-
     document.getElementById('lwvr-ip').innerHTML = renderRows(li.rest, '진행 중인 업무 없음');
     document.getElementById('lwvr-td').innerHTML = renderRows(lt.rest, '14일 이내 예정 업무 없음');
     document.getElementById('lwvr-dn').innerHTML = renderRows(lwvrDone, '완료된 업무 없음');
     document.getElementById('lwvr-done-count').textContent = lwvrDone.length + '개';
 
-    // ZOPS: (완료) 항목 분리
     const zi = splitByTitle(d.zops.inprogress, []);
     const zt = splitByTitle(d.zops.todo, []);
     const zopsDone = [...zi.done, ...zt.done, ...(d.zops.done||[])];
-
     document.getElementById('zops-ip').innerHTML = renderRows(zi.rest, '진행 중인 업무 없음');
     document.getElementById('zops-td').innerHTML = renderRows(zt.rest, '14일 이내 예정 업무 없음');
     document.getElementById('zops-dn').innerHTML = renderRows(zopsDone, '완료된 업무 없음');
