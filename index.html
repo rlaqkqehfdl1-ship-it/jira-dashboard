@@ -36,6 +36,21 @@
   .task-due { font-size: 12px; color: #6B778C; white-space: nowrap; width: 88px; text-align: right; flex-shrink: 0; }
   .due-soon { color: #FF5630; font-weight: 600; }
   .empty { color: #8993A4; font-size: 13px; padding: 6px 0; }
+  /* 완료 아코디언 */
+  .done-section { border-top: 1px solid #F4F5F7; }
+  .done-section summary {
+    list-style: none; cursor: pointer; padding: 12px 20px;
+    display: flex; align-items: center; gap: 8px;
+    font-size: 11px; font-weight: 700; color: #5E6C84;
+    text-transform: uppercase; letter-spacing: .5px;
+    user-select: none;
+  }
+  .done-section summary::-webkit-details-marker { display: none; }
+  .done-section summary:hover { background: #F4F5F7; }
+  .done-arrow { font-size: 10px; transition: transform .2s; color: #8993A4; }
+  .done-section[open] .done-arrow { transform: rotate(90deg); }
+  .done-count { background: #E3FCEF; color: #006644; font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+  .done-content { padding: 0 20px 12px; }
 </style>
 </head>
 <body>
@@ -52,13 +67,19 @@
     <div class="project-title">LWVR — LW 광촉매 프로젝트</div>
     <div class="section"><div class="section-title">진행 중</div><div id="lwvr-ip"></div></div>
     <div class="section"><div class="section-title">다음 주 예정 (14일 이내)</div><div id="lwvr-td"></div></div>
-    <div class="section"><div class="section-title">이번 주 완료</div><div id="lwvr-dn"></div></div>
+    <details class="done-section" id="lwvr-done-wrap">
+      <summary><span class="done-arrow">▶</span> 완료 <span class="done-count" id="lwvr-done-count">0개</span></summary>
+      <div class="done-content" id="lwvr-dn"></div>
+    </details>
   </div>
   <div class="project-block">
     <div class="project-title">ZOPS — OPS 칸반 보드</div>
     <div class="section"><div class="section-title">진행 중</div><div id="zops-ip"></div></div>
     <div class="section"><div class="section-title">다음 주 예정 (14일 이내)</div><div id="zops-td"></div></div>
-    <div class="section"><div class="section-title">이번 주 완료</div><div id="zops-dn"></div></div>
+    <details class="done-section" id="zops-done-wrap">
+      <summary><span class="done-arrow">▶</span> 완료 <span class="done-count" id="zops-done-count">0개</span></summary>
+      <div class="done-content" id="zops-dn"></div>
+    </details>
   </div>
 </div>
 <script>
@@ -110,10 +131,12 @@ async function refresh() {
     const d = await loadData();
     document.getElementById('lwvr-ip').innerHTML = renderRows(d.lwvr.inprogress, '진행 중인 업무 없음');
     document.getElementById('lwvr-td').innerHTML = renderRows(d.lwvr.todo,       '14일 이내 예정 업무 없음');
-    document.getElementById('lwvr-dn').innerHTML = renderRows(d.lwvr.done,       '이번 주 완료된 업무 없음');
+    document.getElementById('lwvr-dn').innerHTML       = renderRows(d.lwvr.done, '완료된 업무 없음');
+    document.getElementById('lwvr-done-count').textContent = (d.lwvr.done||[]).length + '개';
     document.getElementById('zops-ip').innerHTML = renderRows(d.zops.inprogress, '진행 중인 업무 없음');
     document.getElementById('zops-td').innerHTML = renderRows(d.zops.todo,       '14일 이내 예정 업무 없음');
-    document.getElementById('zops-dn').innerHTML = renderRows(d.zops.done,       '이번 주 완료된 업무 없음');
+    document.getElementById('zops-dn').innerHTML       = renderRows(d.zops.done, '완료된 업무 없음');
+    document.getElementById('zops-done-count').textContent = (d.zops.done||[]).length + '개';
     document.getElementById('last-updated').textContent = '데이터 기준: ' + d.updated.replace('T',' ');
   } catch(e) {
     document.getElementById('last-updated').textContent = '오류: ' + e.message;
