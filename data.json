@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-22T08:01:42",
+  "updated": "2026-05-22T11:13:49",
   "lwvr": {
     "inprogress": [
       {
@@ -150,7 +150,7 @@
         "duedate": "2026-05-15",
         "subtasks": {
           "done": 8,
-          "total": 14,
+          "total": 15,
           "items": [
             {
               "key": "LWVR-122",
@@ -233,6 +233,12 @@
             {
               "key": "LWVR-166",
               "summary": "14. LW 광촉매 DV평가를 위한 양산 조건 PCB 제작",
+              "statusCat": "indeterminate",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-167",
+              "summary": "LED 파장대 변경 샘플 제공 요청 (광전자)",
               "statusCat": "indeterminate",
               "duedate": "2026-05-29"
             }
@@ -680,6 +686,18 @@
       }
     ],
     "done": [
+      {
+        "key": "ZOPS-210",
+        "summary": "LW 광촉매 작동사양서 작성 (현대위아 요청)",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-05-22",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
       {
         "key": "ZOPS-39",
         "summary": "RS4 광촉매 CARB 인증용 오존시험 샘플 회수",
