@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-27T01:55:44",
+  "updated": "2026-05-27T06:23:06",
   "lwvr": {
     "inprogress": [
       {
@@ -678,6 +678,18 @@
         "statusCat": "new",
         "status": "할 일 (TO DO)",
         "duedate": "2026-05-22",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
+      {
+        "key": "ZOPS-214",
+        "summary": "RS4 PE ?? ??? VR LED ?? FEMALE CONNECTOR/PIN ?? ??",
+        "statusCat": "new",
+        "status": "할 일 (TO DO)",
+        "duedate": "2026-05-29",
         "subtasks": {
           "done": 0,
           "total": 0,
