@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-27T22:57:40",
+  "updated": "2026-05-28T00:04:43",
   "lwvr": {
     "inprogress": [
       {
@@ -686,10 +686,22 @@
       },
       {
         "key": "ZOPS-214",
-        "summary": "RS4 PE ?? ??? VR LED ?? FEMALE CONNECTOR/PIN ?? ??",
+        "summary": "RS4 PE FEMALE CONNECTOR/PIN 고객 전달",
         "statusCat": "new",
         "status": "할 일 (TO DO)",
         "duedate": "2026-05-29",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
+      {
+        "key": "ZOPS-215",
+        "summary": "글로벌 벤치마킹 플랫폼 분석 및 팀내 세미나 실시",
+        "statusCat": "new",
+        "status": "할 일 (TO DO)",
+        "duedate": "2026-06-08",
         "subtasks": {
           "done": 0,
           "total": 0,
