@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-01T01:57:18",
+  "updated": "2026-06-01T07:06:40",
   "lwvr": {
     "inprogress": [
       {
@@ -695,7 +695,7 @@
         "summary": "글로벌 벤치마킹 플랫폼 분석 및 팀내 세미나 실시",
         "statusCat": "new",
         "status": "할 일 (TO DO)",
-        "duedate": "2026-06-08",
+        "duedate": "2026-06-10",
         "subtasks": {
           "done": 0,
           "total": 0,
