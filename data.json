@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-08T23:58:24",
+  "updated": "2026-06-09T04:17:49",
   "lwvr": {
     "inprogress": [
       {
@@ -229,31 +229,31 @@
         "status": "진행 중",
         "duedate": "2026-05-29",
         "subtasks": {
-          "done": 0,
+          "done": 3,
           "total": 4,
           "items": [
             {
               "key": "LWVR-159",
               "summary": "1. LW 광촉매 PP-GF30 금형 PP-TD20 시사출 구매팀 문의",
-              "statusCat": "indeterminate",
+              "statusCat": "done",
               "duedate": "2026-05-29"
             },
             {
               "key": "LWVR-160",
               "summary": "2. LW 광촉매 재질 베이스 결정 (PP-TD20 vs PP-GF30)",
-              "statusCat": "new",
+              "statusCat": "indeterminate",
               "duedate": "2026-05-30"
             },
             {
               "key": "LWVR-161",
               "summary": "3. LW 광촉매 금형 유형 검토 (패밀리 vs 개별 - UPR/LWR/PC COVER)",
-              "statusCat": "indeterminate",
+              "statusCat": "done",
               "duedate": "2026-05-29"
             },
             {
               "key": "LWVR-162",
               "summary": "4. LW 광촉매 금형 제작 방식 결정 (양산 vs QDM vs 시작)",
-              "statusCat": "indeterminate",
+              "statusCat": "done",
               "duedate": "2026-05-29"
             }
           ]
@@ -345,7 +345,7 @@
         "status": "진행 중",
         "duedate": "2026-06-05",
         "subtasks": {
-          "done": 9,
+          "done": 11,
           "total": 16,
           "items": [
             {
@@ -423,13 +423,13 @@
             {
               "key": "LWVR-165",
               "summary": "13. LW 광촉매 EMC 시험 (6/5~)",
-              "statusCat": "new",
+              "statusCat": "indeterminate",
               "duedate": "2026-06-05"
             },
             {
               "key": "LWVR-166",
               "summary": "14. LW 광촉매 DV평가를 위한 양산 조건 PCB 제작",
-              "statusCat": "indeterminate",
+              "statusCat": "done",
               "duedate": "2026-06-12"
             },
             {
@@ -441,7 +441,7 @@
             {
               "key": "LWVR-168",
               "summary": "15. LW 광촉매 EMC 시험 준비 - 커넥터 사양 제작 (1.8M / 20cm)",
-              "statusCat": "new",
+              "statusCat": "done",
               "duedate": "2026-06-05"
             }
           ]
@@ -629,11 +629,23 @@
   "zops": {
     "inprogress": [
       {
-        "key": "ZOPS-214",
-        "summary": "RS4 PE FEMALE CONNECTOR/PIN 고객 전달",
+        "key": "ZOPS-194",
+        "summary": "RS4 PE 광촉매 미국사양 부품도 작성",
         "statusCat": "indeterminate",
         "status": "진행 중",
         "duedate": "2026-05-29",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
+      {
+        "key": "ZOPS-215",
+        "summary": "글로벌 벤치마킹 플랫폼 분석 및 팀내 세미나 실시",
+        "statusCat": "indeterminate",
+        "status": "진행 중",
+        "duedate": "2026-06-10",
         "subtasks": {
           "done": 0,
           "total": 0,
@@ -645,7 +657,7 @@
         "summary": "RS4 광촉매 국내사양 단가 검토 및 자료 회신 (한온시스템)",
         "statusCat": "indeterminate",
         "status": "진행 중",
-        "duedate": "2026-05-29",
+        "duedate": "2026-06-12",
         "subtasks": {
           "done": 0,
           "total": 0,
@@ -657,19 +669,7 @@
         "summary": "RS4 광촉매 CARB 시험 성적서 수정",
         "statusCat": "indeterminate",
         "status": "진행 중",
-        "duedate": "2026-05-29",
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
-        }
-      },
-      {
-        "key": "ZOPS-194",
-        "summary": "RS4 PE 광촉매 미국사양 부품도 작성",
-        "statusCat": "indeterminate",
-        "status": "진행 중",
-        "duedate": "2026-05-29",
+        "duedate": "2026-06-19",
         "subtasks": {
           "done": 0,
           "total": 0,
@@ -689,21 +689,20 @@
         }
       }
     ],
-    "todo": [
+    "todo": [],
+    "done": [
       {
-        "key": "ZOPS-215",
-        "summary": "글로벌 벤치마킹 플랫폼 분석 및 팀내 세미나 실시",
-        "statusCat": "new",
-        "status": "할 일 (TO DO)",
-        "duedate": "2026-06-10",
+        "key": "ZOPS-214",
+        "summary": "RS4 PE FEMALE CONNECTOR/PIN 고객 전달",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-05-29",
         "subtasks": {
           "done": 0,
           "total": 0,
           "items": []
         }
-      }
-    ],
-    "done": [
+      },
       {
         "key": "ZOPS-216",
         "summary": "남양연구소 7월 신기술 전시회 제출 자료 작성",
