@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T05:31:37",
+  "updated": "2026-06-15T11:33:36",
   "lwvr": {
     "inprogress": [
       {
@@ -118,10 +118,10 @@
         "summary": "[TASK] LW 광촉매 모듈 금형 검토",
         "statusCat": "indeterminate",
         "status": "진행 중",
-        "duedate": "2026-06-12",
+        "duedate": "2026-06-19",
         "subtasks": {
-          "done": 3,
-          "total": 4,
+          "done": 5,
+          "total": 6,
           "items": [
             {
               "key": "LWVR-159",
@@ -132,7 +132,7 @@
             {
               "key": "LWVR-160",
               "summary": "2. LW 광촉매 재질 베이스 결정 (PP-TD20 vs PP-GF30)",
-              "statusCat": "indeterminate",
+              "statusCat": "done",
               "duedate": "2026-05-30"
             },
             {
@@ -146,6 +146,18 @@
               "summary": "4. LW 광촉매 금형 제작 방식 결정 (양산 vs QDM vs 시작)",
               "statusCat": "done",
               "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-169",
+              "summary": "5. LW 광촉매 양산 금형비 및 재료비단가 구매팀 검토",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-170",
+              "summary": "6. LW 광촉매 금형 및 부품 단가 변경점 고객 협의",
+              "statusCat": "indeterminate",
+              "duedate": null
             }
           ]
         }
@@ -157,7 +169,7 @@
         "status": "진행 중",
         "duedate": "2026-06-19",
         "subtasks": {
-          "done": 14,
+          "done": 16,
           "total": 16,
           "items": [
             {
@@ -229,7 +241,7 @@
             {
               "key": "LWVR-136",
               "summary": "12. Silicone / PC Cover 양산 제작 가능 여부 및 양산 단가 검토",
-              "statusCat": "indeterminate",
+              "statusCat": "done",
               "duedate": null
             },
             {
@@ -246,8 +258,8 @@
             },
             {
               "key": "LWVR-139",
-              "summary": "15. Assy 기본성능 검증 (탈취) ~ 일정 수립중",
-              "statusCat": "new",
+              "summary": "15. Assy 기능검사",
+              "statusCat": "done",
               "duedate": null
             },
             {
