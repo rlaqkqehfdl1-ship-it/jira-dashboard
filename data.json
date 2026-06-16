@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16T00:12:30",
+  "updated": "2026-06-16T05:35:42",
   "lwvr": {
     "inprogress": [
       {
@@ -706,6 +706,18 @@
         "statusCat": "indeterminate",
         "status": "진행 중",
         "duedate": "2026-06-26",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
+      {
+        "key": "ZOPS-222",
+        "summary": "NE2 인버터 SLEEVE 핀 검토",
+        "statusCat": "indeterminate",
+        "status": "진행 중",
+        "duedate": "2026-08-14",
         "subtasks": {
           "done": 0,
           "total": 0,
