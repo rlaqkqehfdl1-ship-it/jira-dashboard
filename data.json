@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22T23:07:48",
+  "updated": "2026-06-23T00:19:36",
   "lwvr": {
     "inprogress": [
       {
@@ -641,30 +641,6 @@
   "zops": {
     "inprogress": [
       {
-        "key": "ZOPS-194",
-        "summary": "RS4 PE 광촉매 미국사양 부품도 작성",
-        "statusCat": "indeterminate",
-        "status": "진행 중",
-        "duedate": "2026-05-29",
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
-        }
-      },
-      {
-        "key": "ZOPS-215",
-        "summary": "글로벌 벤치마킹 플랫폼 분석 및 팀내 세미나 실시",
-        "statusCat": "indeterminate",
-        "status": "진행 중",
-        "duedate": "2026-06-10",
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
-        }
-      },
-      {
         "key": "ZOPS-201",
         "summary": "RS4 광촉매 국내사양 단가 검토 및 자료 회신 (한온시스템)",
         "statusCat": "indeterminate",
@@ -694,6 +670,30 @@
         "statusCat": "indeterminate",
         "status": "진행 중",
         "duedate": "2026-06-19",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
+      {
+        "key": "ZOPS-194",
+        "summary": "RS4 PE 광촉매 미국사양 부품도 작성",
+        "statusCat": "indeterminate",
+        "status": "진행 중",
+        "duedate": "2026-06-25",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
+      {
+        "key": "ZOPS-215",
+        "summary": "글로벌 벤치마킹 플랫폼 분석 및 팀내 세미나 실시",
+        "statusCat": "indeterminate",
+        "status": "진행 중",
+        "duedate": "2026-06-26",
         "subtasks": {
           "done": 0,
           "total": 0,
