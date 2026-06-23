@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T00:19:36",
+  "updated": "2026-06-23T04:35:34",
   "lwvr": {
     "inprogress": [
       {
@@ -29,43 +29,6 @@
               "summary": "3. LW 광촉매 승인도 수정(CASE LWR - 텅그루브 형상 추가)",
               "statusCat": "done",
               "duedate": "2026-05-11"
-            }
-          ]
-        }
-      },
-      {
-        "key": "LWVR-83",
-        "summary": "[TASK] LW 광촉매 부품도",
-        "statusCat": "indeterminate",
-        "status": "진행 중",
-        "duedate": "2026-05-22",
-        "subtasks": {
-          "done": 0,
-          "total": 4,
-          "items": [
-            {
-              "key": "LWVR-148",
-              "summary": "1. Case Upper 부품도",
-              "statusCat": "new",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-149",
-              "summary": "2. Case Lower 부품도",
-              "statusCat": "new",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-150",
-              "summary": "3. PC Cover 부품도",
-              "statusCat": "new",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-151",
-              "summary": "4. Label 부품도",
-              "statusCat": "new",
-              "duedate": "2026-05-29"
             }
           ]
         }
@@ -118,7 +81,7 @@
         "summary": "[TASK] LW 광촉매 모듈 금형 검토",
         "statusCat": "indeterminate",
         "status": "진행 중",
-        "duedate": "2026-06-19",
+        "duedate": "2026-06-24",
         "subtasks": {
           "done": 5,
           "total": 6,
@@ -163,11 +126,48 @@
         }
       },
       {
+        "key": "LWVR-83",
+        "summary": "[TASK] LW 광촉매 부품도",
+        "statusCat": "indeterminate",
+        "status": "진행 중",
+        "duedate": "2026-06-26",
+        "subtasks": {
+          "done": 0,
+          "total": 4,
+          "items": [
+            {
+              "key": "LWVR-148",
+              "summary": "1. Case Upper 부품도",
+              "statusCat": "new",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-149",
+              "summary": "2. Case Lower 부품도",
+              "statusCat": "new",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-150",
+              "summary": "3. PC Cover 부품도",
+              "statusCat": "new",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-151",
+              "summary": "4. Label 부품도",
+              "statusCat": "new",
+              "duedate": "2026-05-29"
+            }
+          ]
+        }
+      },
+      {
         "key": "LWVR-86",
         "summary": "[TASK] LW 광촉매 특허 침해 검토",
         "statusCat": "indeterminate",
         "status": "진행 중",
-        "duedate": "2026-06-19",
+        "duedate": "2026-06-30",
         "subtasks": {
           "done": 16,
           "total": 16,
@@ -276,7 +276,7 @@
         "summary": "[TESK] LW 광촉매 ESIR",
         "statusCat": "indeterminate",
         "status": "진행 중",
-        "duedate": "2026-06-26",
+        "duedate": "2026-08-14",
         "subtasks": {
           "done": 11,
           "total": 16,
@@ -326,7 +326,7 @@
             {
               "key": "LWVR-155",
               "summary": "8. LW 광촉매 시험 견적 접수",
-              "statusCat": "new",
+              "statusCat": "indeterminate",
               "duedate": null
             },
             {
@@ -337,8 +337,8 @@
             },
             {
               "key": "LWVR-157",
-              "summary": "10. LW 광촉매 DV 시험 진행 (8/1~)",
-              "statusCat": "new",
+              "summary": "10. LW 광촉매 DV 시험 진행 (8/14~)",
+              "statusCat": "indeterminate",
               "duedate": null
             },
             {
