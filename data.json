@@ -1,38 +1,7 @@
 {
-  "updated": "2026-06-30T01:32:48",
+  "updated": "2026-06-30T05:51:26",
   "lwvr": {
     "inprogress": [
-      {
-        "key": "LWVR-79",
-        "summary": "[TASK] LW 광촉매 ASS'Y 3D모델링",
-        "statusCat": "indeterminate",
-        "status": "진행 중",
-        "duedate": "2026-05-11",
-        "subtasks": {
-          "done": 3,
-          "total": 3,
-          "items": [
-            {
-              "key": "LWVR-145",
-              "summary": "1. LW 광촉매 Assy 모델링 고객 제출(1차)",
-              "statusCat": "done",
-              "duedate": "2026-01-19"
-            },
-            {
-              "key": "LWVR-146",
-              "summary": "2. LW 광촉매 승인도 수정(마운팅 길이 6mm 증대)",
-              "statusCat": "done",
-              "duedate": "2026-02-03"
-            },
-            {
-              "key": "LWVR-147",
-              "summary": "3. LW 광촉매 승인도 수정(CASE LWR - 텅그루브 형상 추가)",
-              "statusCat": "done",
-              "duedate": "2026-05-11"
-            }
-          ]
-        }
-      },
       {
         "key": "LWVR-53",
         "summary": "[TASK] LW 광촉매 승인도",
@@ -132,32 +101,38 @@
         "status": "진행 중",
         "duedate": "2026-06-26",
         "subtasks": {
-          "done": 0,
-          "total": 4,
+          "done": 5,
+          "total": 5,
           "items": [
             {
               "key": "LWVR-148",
               "summary": "1. Case Upper 부품도",
-              "statusCat": "new",
+              "statusCat": "done",
               "duedate": "2026-05-29"
             },
             {
               "key": "LWVR-149",
               "summary": "2. Case Lower 부품도",
-              "statusCat": "new",
+              "statusCat": "done",
               "duedate": "2026-05-29"
             },
             {
               "key": "LWVR-150",
-              "summary": "3. PC Cover 부품도",
-              "statusCat": "new",
+              "summary": "3. PCB Cover 부품도",
+              "statusCat": "done",
               "duedate": "2026-05-29"
             },
             {
               "key": "LWVR-151",
               "summary": "4. Label 부품도",
-              "statusCat": "new",
+              "statusCat": "done",
               "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-176",
+              "summary": "5. 특허 회피 사양 반영 부품도 드로잉 (PCB Assy)",
+              "statusCat": "done",
+              "duedate": null
             }
           ]
         }
@@ -266,6 +241,67 @@
               "key": "LWVR-140",
               "summary": "16. DV 시험 일정 고객 협의",
               "statusCat": "done",
+              "duedate": null
+            }
+          ]
+        }
+      },
+      {
+        "key": "LWVR-79",
+        "summary": "[TASK] LW 광촉매 3D모델링",
+        "statusCat": "indeterminate",
+        "status": "진행 중",
+        "duedate": "2026-07-03",
+        "subtasks": {
+          "done": 7,
+          "total": 8,
+          "items": [
+            {
+              "key": "LWVR-145",
+              "summary": "1. LW 광촉매 Assy 모델링 고객 제출(1차)",
+              "statusCat": "done",
+              "duedate": "2026-01-19"
+            },
+            {
+              "key": "LWVR-146",
+              "summary": "2. LW 광촉매 승인도 수정(마운팅 길이 6mm 증대)",
+              "statusCat": "done",
+              "duedate": "2026-02-03"
+            },
+            {
+              "key": "LWVR-147",
+              "summary": "3. LW 광촉매 승인도 수정(CASE LWR - 텅그루브 형상 추가)",
+              "statusCat": "done",
+              "duedate": "2026-05-11"
+            },
+            {
+              "key": "LWVR-171",
+              "summary": "4. 특허 회피 사양 반영 3D 모델링 (Case UPR)",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-172",
+              "summary": "5. 특허 회피 사양 반영 3D 모델링 (Case LWR)",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-173",
+              "summary": "6. 특허 회피 사양 반영 3D 모델링 (PCB Cover)",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-174",
+              "summary": "7. 특허 회피 사양 반영 3D 모델링 (PCB Assy)",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-175",
+              "summary": "8. 특허 회피 사양 반영 3D 모델링 (LABEL)",
+              "statusCat": "indeterminate",
               "duedate": null
             }
           ]
@@ -653,18 +689,6 @@
         }
       },
       {
-        "key": "ZOPS-219",
-        "summary": "RS4 광촉매 LED 파장대 변경품 검증",
-        "statusCat": "indeterminate",
-        "status": "진행 중",
-        "duedate": "2026-06-19",
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
-        }
-      },
-      {
         "key": "ZOPS-195",
         "summary": "RS4 광촉매 CARB 시험 성적서 수정",
         "statusCat": "indeterminate",
@@ -689,8 +713,8 @@
         }
       },
       {
-        "key": "ZOPS-215",
-        "summary": "글로벌 벤치마킹 플랫폼 분석 및 팀내 세미나 실시",
+        "key": "ZOPS-32",
+        "summary": "RS4 광촉매 CARB 인증 현황 자료 작성 및 전자결재 상신 ",
         "statusCat": "indeterminate",
         "status": "진행 중",
         "duedate": "2026-06-26",
@@ -701,11 +725,11 @@
         }
       },
       {
-        "key": "ZOPS-32",
-        "summary": "RS4 광촉매 CARB 인증 현황 자료 작성 및 전자결재 상신 ",
+        "key": "ZOPS-219",
+        "summary": "RS4 광촉매 LED 파장대 변경품 검증",
         "statusCat": "indeterminate",
         "status": "진행 중",
-        "duedate": "2026-06-26",
+        "duedate": "2026-07-03",
         "subtasks": {
           "done": 0,
           "total": 0,
@@ -727,6 +751,18 @@
     ],
     "todo": [],
     "done": [
+      {
+        "key": "ZOPS-215",
+        "summary": "글로벌 벤치마킹 플랫폼 분석 및 팀내 세미나 실시",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-06-26",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
       {
         "key": "ZOPS-214",
         "summary": "RS4 PE FEMALE CONNECTOR/PIN 고객 전달",
