@@ -1,142 +1,7 @@
 {
-  "updated": "2026-07-09T01:18:07",
+  "updated": "2026-07-09T05:12:58",
   "lwvr": {
     "inprogress": [
-      {
-        "key": "LWVR-53",
-        "summary": "[TASK] LW 광촉매 승인도",
-        "statusCat": "indeterminate",
-        "status": "진행 중",
-        "duedate": "2026-05-22",
-        "subtasks": {
-          "done": 4,
-          "total": 5,
-          "items": [
-            {
-              "key": "LWVR-73",
-              "summary": "1. LW 광촉매 승인도 고객 제출(1차)",
-              "statusCat": "done",
-              "duedate": "2026-01-19"
-            },
-            {
-              "key": "LWVR-106",
-              "summary": "2. LW 광촉매 승인도 수정(마운팅 길이 6mm 증대)",
-              "statusCat": "done",
-              "duedate": "2026-02-03"
-            },
-            {
-              "key": "LWVR-99",
-              "summary": "3. LW 광촉매 승인도 수정(ES/MS 버전 최신화)",
-              "statusCat": "done",
-              "duedate": "2026-03-06"
-            },
-            {
-              "key": "LWVR-121",
-              "summary": "4. LW 광촉매 승인도 수정(파장, 광량 표기 제거)",
-              "statusCat": "indeterminate",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-97",
-              "summary": "5. LW 광촉매 승인도 수정(CASE LWR - 텅그루브 형상 추가)",
-              "statusCat": "done",
-              "duedate": "2026-01-26"
-            }
-          ]
-        }
-      },
-      {
-        "key": "LWVR-158",
-        "summary": "[TASK] LW 광촉매 모듈 금형 검토",
-        "statusCat": "indeterminate",
-        "status": "진행 중",
-        "duedate": "2026-06-24",
-        "subtasks": {
-          "done": 5,
-          "total": 6,
-          "items": [
-            {
-              "key": "LWVR-159",
-              "summary": "1. LW 광촉매 PP-GF30 금형 PP-TD20 시사출 구매팀 문의",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-160",
-              "summary": "2. LW 광촉매 재질 베이스 결정 (PP-TD20 vs PP-GF30)",
-              "statusCat": "done",
-              "duedate": "2026-05-30"
-            },
-            {
-              "key": "LWVR-161",
-              "summary": "3. LW 광촉매 금형 유형 검토 (패밀리 vs 개별 - UPR/LWR/PC COVER)",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-162",
-              "summary": "4. LW 광촉매 금형 제작 방식 결정 (양산 vs QDM vs 시작)",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-169",
-              "summary": "5. LW 광촉매 양산 금형비 및 재료비단가 구매팀 검토",
-              "statusCat": "done",
-              "duedate": null
-            },
-            {
-              "key": "LWVR-170",
-              "summary": "6. LW 광촉매 금형 및 부품 단가 변경점 고객 협의",
-              "statusCat": "indeterminate",
-              "duedate": null
-            }
-          ]
-        }
-      },
-      {
-        "key": "LWVR-83",
-        "summary": "[TASK] LW 광촉매 부품도",
-        "statusCat": "indeterminate",
-        "status": "진행 중",
-        "duedate": "2026-06-26",
-        "subtasks": {
-          "done": 5,
-          "total": 5,
-          "items": [
-            {
-              "key": "LWVR-148",
-              "summary": "1. Case Upper 부품도",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-149",
-              "summary": "2. Case Lower 부품도",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-150",
-              "summary": "3. PCB Cover 부품도",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-151",
-              "summary": "4. Label 부품도",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-176",
-              "summary": "5. 특허 회피 사양 반영 부품도 드로잉 (PCB Assy)",
-              "statusCat": "done",
-              "duedate": null
-            }
-          ]
-        }
-      },
       {
         "key": "LWVR-86",
         "summary": "[TASK] LW 광촉매 특허 침해 검토",
@@ -247,11 +112,146 @@
         }
       },
       {
+        "key": "LWVR-53",
+        "summary": "[TASK] LW 광촉매 승인도",
+        "statusCat": "indeterminate",
+        "status": "진행 중",
+        "duedate": "2026-07-09",
+        "subtasks": {
+          "done": 4,
+          "total": 5,
+          "items": [
+            {
+              "key": "LWVR-73",
+              "summary": "1. LW 광촉매 승인도 고객 제출(1차)",
+              "statusCat": "done",
+              "duedate": "2026-01-19"
+            },
+            {
+              "key": "LWVR-106",
+              "summary": "2. LW 광촉매 승인도 수정(마운팅 길이 6mm 증대)",
+              "statusCat": "done",
+              "duedate": "2026-02-03"
+            },
+            {
+              "key": "LWVR-99",
+              "summary": "3. LW 광촉매 승인도 수정(ES/MS 버전 최신화)",
+              "statusCat": "done",
+              "duedate": "2026-03-06"
+            },
+            {
+              "key": "LWVR-121",
+              "summary": "4. LW 광촉매 승인도 수정(파장, 광량 표기 제거)",
+              "statusCat": "indeterminate",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-97",
+              "summary": "5. LW 광촉매 승인도 수정(CASE LWR - 텅그루브 형상 추가)",
+              "statusCat": "done",
+              "duedate": "2026-01-26"
+            }
+          ]
+        }
+      },
+      {
+        "key": "LWVR-158",
+        "summary": "[TASK] LW 광촉매 모듈 금형 검토",
+        "statusCat": "indeterminate",
+        "status": "진행 중",
+        "duedate": "2026-07-10",
+        "subtasks": {
+          "done": 5,
+          "total": 6,
+          "items": [
+            {
+              "key": "LWVR-159",
+              "summary": "1. LW 광촉매 PP-GF30 금형 PP-TD20 시사출 구매팀 문의",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-160",
+              "summary": "2. LW 광촉매 재질 베이스 결정 (PP-TD20 vs PP-GF30)",
+              "statusCat": "done",
+              "duedate": "2026-05-30"
+            },
+            {
+              "key": "LWVR-161",
+              "summary": "3. LW 광촉매 금형 유형 검토 (패밀리 vs 개별 - UPR/LWR/PC COVER)",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-162",
+              "summary": "4. LW 광촉매 금형 제작 방식 결정 (양산 vs QDM vs 시작)",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-169",
+              "summary": "5. LW 광촉매 양산 금형비 및 재료비단가 구매팀 검토",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-170",
+              "summary": "6. LW 광촉매 금형 및 부품 단가 변경점 고객 협의",
+              "statusCat": "indeterminate",
+              "duedate": null
+            }
+          ]
+        }
+      },
+      {
+        "key": "LWVR-83",
+        "summary": "[TASK] LW 광촉매 부품도",
+        "statusCat": "indeterminate",
+        "status": "진행 중",
+        "duedate": "2026-07-10",
+        "subtasks": {
+          "done": 5,
+          "total": 5,
+          "items": [
+            {
+              "key": "LWVR-148",
+              "summary": "1. Case Upper 부품도",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-149",
+              "summary": "2. Case Lower 부품도",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-150",
+              "summary": "3. PCB Cover 부품도",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-151",
+              "summary": "4. Label 부품도",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-176",
+              "summary": "5. 특허 회피 사양 반영 부품도 드로잉 (PCB Assy)",
+              "statusCat": "done",
+              "duedate": null
+            }
+          ]
+        }
+      },
+      {
         "key": "LWVR-79",
         "summary": "[TASK] LW 광촉매 3D모델링",
         "statusCat": "indeterminate",
         "status": "진행 중",
-        "duedate": "2026-07-03",
+        "duedate": "2026-07-10",
         "subtasks": {
           "done": 7,
           "total": 8,
@@ -430,7 +430,7 @@
       },
       {
         "key": "LWVR-65",
-        "summary": "[TASK] BOM(완료)",
+        "summary": "[TASK] BOM",
         "statusCat": "indeterminate",
         "status": "검토 중",
         "duedate": null,
@@ -677,18 +677,6 @@
   "zops": {
     "inprogress": [
       {
-        "key": "ZOPS-201",
-        "summary": "RS4 광촉매 국내사양 단가 검토 및 자료 회신 (한온시스템)",
-        "statusCat": "indeterminate",
-        "status": "진행 중",
-        "duedate": "2026-06-12",
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
-        }
-      },
-      {
         "key": "ZOPS-195",
         "summary": "RS4 광촉매 CARB 시험 성적서 수정",
         "statusCat": "indeterminate",
@@ -729,19 +717,7 @@
         "summary": "RS4 광촉매 LED 파장대 변경품 검증",
         "statusCat": "indeterminate",
         "status": "진행 중",
-        "duedate": "2026-07-03",
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
-        }
-      },
-      {
-        "key": "ZOPS-222",
-        "summary": "NE2 인버터 SLEEVE 핀 검토",
-        "statusCat": "indeterminate",
-        "status": "진행 중",
-        "duedate": "2026-08-14",
+        "duedate": "2026-07-17",
         "subtasks": {
           "done": 0,
           "total": 0,
@@ -751,6 +727,30 @@
     ],
     "todo": [],
     "done": [
+      {
+        "key": "ZOPS-222",
+        "summary": "NE2 인버터 SLEEVE 핀 검토",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-08-14",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
+      {
+        "key": "ZOPS-201",
+        "summary": "RS4 광촉매 국내사양 단가 검토 및 자료 회신 (한온시스템)",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-07-09",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
       {
         "key": "ZOPS-215",
         "summary": "글로벌 벤치마킹 플랫폼 분석 및 팀내 세미나 실시",
