@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T04:05:18",
+  "updated": "2026-07-14T06:21:44",
   "lwvr": {
     "inprogress": [
       {
@@ -118,7 +118,7 @@
         "status": "진행 중",
         "duedate": "2026-07-09",
         "subtasks": {
-          "done": 4,
+          "done": 5,
           "total": 5,
           "items": [
             {
@@ -141,8 +141,8 @@
             },
             {
               "key": "LWVR-121",
-              "summary": "4. LW 광촉매 승인도 수정(파장, 광량 표기 제거)",
-              "statusCat": "indeterminate",
+              "summary": "4. LW 광촉매 승인도 수정(파장 표기 제거)",
+              "statusCat": "done",
               "duedate": "2026-05-29"
             },
             {
@@ -161,7 +161,7 @@
         "status": "진행 중",
         "duedate": "2026-07-10",
         "subtasks": {
-          "done": 5,
+          "done": 6,
           "total": 6,
           "items": [
             {
@@ -197,7 +197,7 @@
             {
               "key": "LWVR-170",
               "summary": "6. LW 광촉매 금형 및 부품 단가 변경점 고객 협의",
-              "statusCat": "indeterminate",
+              "statusCat": "done",
               "duedate": null
             }
           ]
@@ -235,7 +235,7 @@
               "key": "LWVR-151",
               "summary": "4. Label 부품도",
               "statusCat": "done",
-              "duedate": "2026-05-29"
+              "duedate": "2026-07-24"
             },
             {
               "key": "LWVR-176",
@@ -314,7 +314,7 @@
         "status": "진행 중",
         "duedate": "2026-08-14",
         "subtasks": {
-          "done": 11,
+          "done": 14,
           "total": 16,
           "items": [
             {
@@ -362,7 +362,7 @@
             {
               "key": "LWVR-155",
               "summary": "8. LW 광촉매 시험 견적 접수",
-              "statusCat": "indeterminate",
+              "statusCat": "done",
               "duedate": null
             },
             {
@@ -392,7 +392,7 @@
             {
               "key": "LWVR-165",
               "summary": "13. LW 광촉매 EMC 시험 (6/5~)",
-              "statusCat": "indeterminate",
+              "statusCat": "done",
               "duedate": "2026-06-05"
             },
             {
@@ -404,7 +404,7 @@
             {
               "key": "LWVR-167",
               "summary": "LED 파장대 변경 샘플 제공 요청 (광전자)",
-              "statusCat": "indeterminate",
+              "statusCat": "done",
               "duedate": "2026-05-29"
             },
             {
@@ -718,6 +718,18 @@
         "statusCat": "indeterminate",
         "status": "진행 중",
         "duedate": "2026-07-17",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
+      {
+        "key": "ZOPS-224",
+        "summary": "ASPICE 문제해결 및 변경관리 프로세스 문서화",
+        "statusCat": "indeterminate",
+        "status": "진행 중",
+        "duedate": "2026-12-31",
         "subtasks": {
           "done": 0,
           "total": 0,
