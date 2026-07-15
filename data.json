@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T23:11:03",
+  "updated": "2026-07-15T00:05:24",
   "lwvr": {
     "inprogress": [
       {
@@ -155,55 +155,6 @@
         }
       },
       {
-        "key": "LWVR-158",
-        "summary": "[TASK] LW 광촉매 모듈 금형 검토",
-        "statusCat": "indeterminate",
-        "status": "진행 중",
-        "duedate": "2026-07-10",
-        "subtasks": {
-          "done": 6,
-          "total": 6,
-          "items": [
-            {
-              "key": "LWVR-159",
-              "summary": "1. LW 광촉매 PP-GF30 금형 PP-TD20 시사출 구매팀 문의",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-160",
-              "summary": "2. LW 광촉매 재질 베이스 결정 (PP-TD20 vs PP-GF30)",
-              "statusCat": "done",
-              "duedate": "2026-05-30"
-            },
-            {
-              "key": "LWVR-161",
-              "summary": "3. LW 광촉매 금형 유형 검토 (패밀리 vs 개별 - UPR/LWR/PC COVER)",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-162",
-              "summary": "4. LW 광촉매 금형 제작 방식 결정 (양산 vs QDM vs 시작)",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-169",
-              "summary": "5. LW 광촉매 양산 금형비 및 재료비단가 구매팀 검토",
-              "statusCat": "done",
-              "duedate": null
-            },
-            {
-              "key": "LWVR-170",
-              "summary": "6. LW 광촉매 금형 및 부품 단가 변경점 고객 협의",
-              "statusCat": "done",
-              "duedate": null
-            }
-          ]
-        }
-      },
-      {
         "key": "LWVR-83",
         "summary": "[TASK] LW 광촉매 부품도",
         "statusCat": "indeterminate",
@@ -302,6 +253,55 @@
               "key": "LWVR-175",
               "summary": "8. 특허 회피 사양 반영 3D 모델링 (LABEL)",
               "statusCat": "indeterminate",
+              "duedate": null
+            }
+          ]
+        }
+      },
+      {
+        "key": "LWVR-158",
+        "summary": "[TASK] LW 광촉매 모듈 금형 검토",
+        "statusCat": "indeterminate",
+        "status": "진행 중",
+        "duedate": "2026-07-24",
+        "subtasks": {
+          "done": 6,
+          "total": 6,
+          "items": [
+            {
+              "key": "LWVR-159",
+              "summary": "1. LW 광촉매 PP-GF30 금형 PP-TD20 시사출 구매팀 문의",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-160",
+              "summary": "2. LW 광촉매 재질 베이스 결정 (PP-TD20 vs PP-GF30)",
+              "statusCat": "done",
+              "duedate": "2026-05-30"
+            },
+            {
+              "key": "LWVR-161",
+              "summary": "3. LW 광촉매 금형 유형 검토 (패밀리 vs 개별 - UPR/LWR/PC COVER)",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-162",
+              "summary": "4. LW 광촉매 금형 제작 방식 결정 (양산 vs QDM vs 시작)",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-169",
+              "summary": "5. LW 광촉매 양산 금형비 및 재료비단가 구매팀 검토",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-170",
+              "summary": "6. LW 광촉매 금형 및 부품 단가 변경점 고객 협의",
+              "statusCat": "done",
               "duedate": null
             }
           ]
@@ -740,11 +740,11 @@
     "todo": [],
     "done": [
       {
-        "key": "ZOPS-222",
-        "summary": "NE2 인버터 SLEEVE 핀 검토",
+        "key": "ZOPS-201",
+        "summary": "RS4 광촉매 국내사양 단가 검토 및 자료 회신 (한온시스템)",
         "statusCat": "done",
         "status": "완료",
-        "duedate": "2026-08-14",
+        "duedate": "2026-07-09",
         "subtasks": {
           "done": 0,
           "total": 0,
@@ -752,11 +752,11 @@
         }
       },
       {
-        "key": "ZOPS-201",
-        "summary": "RS4 광촉매 국내사양 단가 검토 및 자료 회신 (한온시스템)",
+        "key": "ZOPS-222",
+        "summary": "NE2 인버터 SLEEVE 핀 검토",
         "statusCat": "done",
         "status": "완료",
-        "duedate": "2026-07-09",
+        "duedate": "2026-08-14",
         "subtasks": {
           "done": 0,
           "total": 0,
