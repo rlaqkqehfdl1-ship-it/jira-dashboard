@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27T23:38:24",
+  "updated": "2026-07-28T01:02:08",
   "lwvr": {
     "inprogress": [
       {
@@ -308,6 +308,56 @@
         }
       },
       {
+        "key": "LWVR-186",
+        "summary": "[TASK] LW 광촉매 PROTO 실차 불량 검증 및 원인 분석 (남양연구소)",
+        "statusCat": "indeterminate",
+        "status": "검토 중",
+        "duedate": "2026-07-28",
+        "subtasks": {
+          "done": 0,
+          "total": 2,
+          "items": [
+            {
+              "key": "LWVR-187",
+              "summary": "1. 현대차 남양연구소 방문 PROTO 제품 실차 불량 검증 및 점검",
+              "statusCat": "new",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-188",
+              "summary": "2. ATCU 전원 미공급 원인 규명 및 고객사 최종 대응 결과 공유",
+              "statusCat": "new",
+              "duedate": null
+            }
+          ]
+        }
+      },
+      {
+        "key": "LWVR-179",
+        "summary": "[TASK] LW 광촉매 PCB 사양 검토",
+        "statusCat": "indeterminate",
+        "status": "진행 중",
+        "duedate": "2026-08-14",
+        "subtasks": {
+          "done": 0,
+          "total": 2,
+          "items": [
+            {
+              "key": "LWVR-180",
+              "summary": "1. PCB 가이드 사양 및 RS4 호환성 검토",
+              "statusCat": "new",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-181",
+              "summary": "2. PCB 변경 사양서 및 도면 반영",
+              "statusCat": "new",
+              "duedate": null
+            }
+          ]
+        }
+      },
+      {
         "key": "LWVR-55",
         "summary": "[TESK] LW 광촉매 ESIR",
         "statusCat": "indeterminate",
@@ -412,6 +462,37 @@
               "summary": "15. LW 광촉매 EMC 시험 준비 - 커넥터 사양 제작 (1.8M / 20cm)",
               "statusCat": "done",
               "duedate": "2026-06-05"
+            }
+          ]
+        }
+      },
+      {
+        "key": "LWVR-182",
+        "summary": "[TASK] LW 광촉매 PCB COVER 소재 변경 및 검토",
+        "statusCat": "indeterminate",
+        "status": "진행 중",
+        "duedate": "2026-08-21",
+        "subtasks": {
+          "done": 0,
+          "total": 3,
+          "items": [
+            {
+              "key": "LWVR-183",
+              "summary": "1. PCB COVER 신규 소재 주요 특성 및 단가/MS등록 비교 검토 및 선정",
+              "statusCat": "new",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-184",
+              "summary": "2. 소재 변경점 BOM 및 2D Drawing 도면 반영",
+              "statusCat": "new",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-185",
+              "summary": "3. 양산 금형 검토 및 제작을 위한 구매팀 사양 전달",
+              "statusCat": "new",
+              "duedate": null
             }
           ]
         }
@@ -677,18 +758,6 @@
   "zops": {
     "inprogress": [
       {
-        "key": "ZOPS-195",
-        "summary": "RS4 광촉매 CARB 시험 성적서 수정",
-        "statusCat": "indeterminate",
-        "status": "진행 중",
-        "duedate": "2026-06-19",
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
-        }
-      },
-      {
         "key": "ZOPS-194",
         "summary": "RS4 PE 광촉매 미국사양 부품도 작성",
         "statusCat": "indeterminate",
@@ -718,6 +787,18 @@
         "statusCat": "indeterminate",
         "status": "진행 중",
         "duedate": "2026-07-17",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
+      {
+        "key": "ZOPS-195",
+        "summary": "RS4 광촉매 CARB 시험 성적서 수정",
+        "statusCat": "indeterminate",
+        "status": "진행 중",
+        "duedate": "2026-08-28",
         "subtasks": {
           "done": 0,
           "total": 0,
