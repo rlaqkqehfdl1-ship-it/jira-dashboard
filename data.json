@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-30T06:08:35",
+  "updated": "2026-07-30T08:47:56",
   "lwvr": {
     "inprogress": [
       {
         "key": "LWVR-86",
         "summary": "[TASK] LW 광촉매 특허 침해 검토",
         "statusCat": "indeterminate",
-        "status": "진행 중",
+        "status": "검토",
         "duedate": "2026-06-30",
         "subtasks": {
           "done": 16,
@@ -115,7 +115,7 @@
         "key": "LWVR-53",
         "summary": "[TASK] LW 광촉매 승인도",
         "statusCat": "indeterminate",
-        "status": "진행 중",
+        "status": "검토",
         "duedate": "2026-07-09",
         "subtasks": {
           "done": 5,
@@ -158,7 +158,7 @@
         "key": "LWVR-83",
         "summary": "[TASK] LW 광촉매 부품도",
         "statusCat": "indeterminate",
-        "status": "진행 중",
+        "status": "검토",
         "duedate": "2026-07-10",
         "subtasks": {
           "done": 5,
@@ -201,7 +201,7 @@
         "key": "LWVR-79",
         "summary": "[TASK] LW 광촉매 3D모델링",
         "statusCat": "indeterminate",
-        "status": "진행 중",
+        "status": "검토",
         "duedate": "2026-07-10",
         "subtasks": {
           "done": 7,
@@ -262,7 +262,7 @@
         "key": "LWVR-158",
         "summary": "[TASK] LW 광촉매 모듈 금형 검토",
         "statusCat": "indeterminate",
-        "status": "진행 중",
+        "status": "검토",
         "duedate": "2026-07-24",
         "subtasks": {
           "done": 6,
@@ -336,7 +336,7 @@
         "key": "LWVR-179",
         "summary": "[TASK] LW 광촉매 PCB 사양 검토",
         "statusCat": "indeterminate",
-        "status": "진행 중",
+        "status": "검토",
         "duedate": "2026-08-14",
         "subtasks": {
           "done": 0,
@@ -361,7 +361,7 @@
         "key": "LWVR-55",
         "summary": "[TESK] LW 광촉매 ESIR",
         "statusCat": "indeterminate",
-        "status": "진행 중",
+        "status": "검토",
         "duedate": "2026-08-14",
         "subtasks": {
           "done": 14,
@@ -470,7 +470,7 @@
         "key": "LWVR-182",
         "summary": "[TASK] LW 광촉매 PCB COVER 소재 변경 및 검토",
         "statusCat": "indeterminate",
-        "status": "진행 중",
+        "status": "검토",
         "duedate": "2026-08-21",
         "subtasks": {
           "done": 0,
@@ -501,7 +501,7 @@
         "key": "LWVR-81",
         "summary": "(삭제)",
         "statusCat": "indeterminate",
-        "status": "진행 중",
+        "status": "검토",
         "duedate": null,
         "subtasks": {
           "done": 0,
@@ -761,7 +761,7 @@
         "key": "ZOPS-194",
         "summary": "RS4 PE 광촉매 미국사양 부품도 작성",
         "statusCat": "indeterminate",
-        "status": "진행 중",
+        "status": "검토",
         "duedate": "2026-06-25",
         "subtasks": {
           "done": 0,
@@ -773,7 +773,7 @@
         "key": "ZOPS-32",
         "summary": "RS4 광촉매 CARB 인증 현황 자료 작성 및 전자결재 상신 ",
         "statusCat": "indeterminate",
-        "status": "진행 중",
+        "status": "검토",
         "duedate": "2026-06-26",
         "subtasks": {
           "done": 0,
@@ -785,7 +785,7 @@
         "key": "ZOPS-219",
         "summary": "RS4 광촉매 LED 파장대 변경품 검증",
         "statusCat": "indeterminate",
-        "status": "진행 중",
+        "status": "검토",
         "duedate": "2026-07-17",
         "subtasks": {
           "done": 0,
@@ -797,7 +797,7 @@
         "key": "ZOPS-195",
         "summary": "RS4 광촉매 CARB 시험 성적서 수정",
         "statusCat": "indeterminate",
-        "status": "진행 중",
+        "status": "검토",
         "duedate": "2026-08-28",
         "subtasks": {
           "done": 0,
@@ -809,7 +809,7 @@
         "key": "ZOPS-224",
         "summary": "ASPICE 문제해결 및 변경관리 프로세스 문서화",
         "statusCat": "indeterminate",
-        "status": "진행 중",
+        "status": "검토",
         "duedate": "2026-12-31",
         "subtasks": {
           "done": 0,
