@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-25T23:31:52",
+  "updated": "2026-08-25T23:53:39",
   "lwvr": {
     "inprogress": [
       {
@@ -863,6 +863,18 @@
     ],
     "todo": [],
     "done": [
+      {
+        "key": "ZOPS-228",
+        "summary": "스마트공장 수준확인 심사보고서 자료 작성",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-08-26",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
       {
         "key": "ZOPS-219",
         "summary": "RS4 광촉매 LED 파장대 변경품 검증",
