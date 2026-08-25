@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-25T03:56:43",
+  "updated": "2026-08-25T04:41:49",
   "lwvr": {
     "inprogress": [
       {
@@ -813,18 +813,6 @@
         }
       },
       {
-        "key": "ZOPS-219",
-        "summary": "RS4 광촉매 LED 파장대 변경품 검증",
-        "statusCat": "indeterminate",
-        "status": "검토",
-        "duedate": "2026-07-17",
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
-        }
-      },
-      {
         "key": "ZOPS-195",
         "summary": "RS4 광촉매 CARB 시험 성적서 수정",
         "statusCat": "indeterminate",
@@ -875,6 +863,18 @@
     ],
     "todo": [],
     "done": [
+      {
+        "key": "ZOPS-219",
+        "summary": "RS4 광촉매 LED 파장대 변경품 검증",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-07-17",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
       {
         "key": "ZOPS-201",
         "summary": "RS4 광촉매 국내사양 단가 검토 및 자료 회신 (한온시스템)",
