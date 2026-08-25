@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-25T10:13:56",
+  "updated": "2026-08-25T10:51:59",
   "lwvr": {
     "inprogress": [
       {
         "key": "LWVR-86",
         "summary": "[TASK] LW 광촉매 특허 침해 검토",
         "statusCat": "indeterminate",
-        "status": "검토",
+        "status": "검토 중",
         "duedate": "2026-06-30",
         "subtasks": {
           "done": 16,
