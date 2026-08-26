@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26T20:00:49",
+  "updated": "2026-08-26T23:21:37",
   "lwvr": {
     "inprogress": [
       {
@@ -526,18 +526,6 @@
               "duedate": null
             }
           ]
-        }
-      },
-      {
-        "key": "LWVR-81",
-        "summary": "(삭제)",
-        "statusCat": "indeterminate",
-        "status": "검토",
-        "duedate": null,
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
         }
       },
       {
