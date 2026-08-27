@@ -1,121 +1,12 @@
 {
-  "updated": "2026-08-26T23:21:37",
+  "updated": "2026-08-27T04:35:20",
   "lwvr": {
     "inprogress": [
-      {
-        "key": "LWVR-86",
-        "summary": "[TASK] LW 광촉매 특허 침해 검토",
-        "statusCat": "indeterminate",
-        "status": "검토 중",
-        "duedate": "2026-06-30",
-        "subtasks": {
-          "done": 16,
-          "total": 16,
-          "items": [
-            {
-              "key": "LWVR-119",
-              "summary": "4. PCB Silicone Cover 검토",
-              "statusCat": "done",
-              "duedate": "2026-04-10"
-            },
-            {
-              "key": "LWVR-120",
-              "summary": "3. LED+전자소자 동일면 배치 검토",
-              "statusCat": "done",
-              "duedate": "2026-04-10"
-            },
-            {
-              "key": "LWVR-98",
-              "summary": "2. 특허 리스크 분석",
-              "statusCat": "done",
-              "duedate": "2026-03-20"
-            },
-            {
-              "key": "LWVR-87",
-              "summary": "1. LED 대체 검토(OSRAM-LB_P4SG)",
-              "statusCat": "done",
-              "duedate": "2026-01-26"
-            },
-            {
-              "key": "LWVR-129",
-              "summary": "5. PCB 아트웍(이슬 선임)",
-              "statusCat": "done",
-              "duedate": "2026-04-06"
-            },
-            {
-              "key": "LWVR-130",
-              "summary": "6. PCB 제작 (한샘)",
-              "statusCat": "done",
-              "duedate": null
-            },
-            {
-              "key": "LWVR-131",
-              "summary": "7. Silicone Cover 3D 모델링",
-              "statusCat": "done",
-              "duedate": "2026-04-24"
-            },
-            {
-              "key": "LWVR-132",
-              "summary": "8. Silicone Cover 목업 제작",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-133",
-              "summary": "9. Silicone Cover 조립성 개선 2차 목업 제작",
-              "statusCat": "done",
-              "duedate": null
-            },
-            {
-              "key": "LWVR-134",
-              "summary": "10. PC Cover 목업 제작",
-              "statusCat": "done",
-              "duedate": "2026-05-01"
-            },
-            {
-              "key": "LWVR-135",
-              "summary": "11. Silicone / PC Cover 조립성 검토",
-              "statusCat": "done",
-              "duedate": null
-            },
-            {
-              "key": "LWVR-136",
-              "summary": "12. Silicone / PC Cover 양산 제작 가능 여부 및 양산 단가 검토",
-              "statusCat": "done",
-              "duedate": null
-            },
-            {
-              "key": "LWVR-137",
-              "summary": "13. HALT / HAST 시험 일정 견적 검토",
-              "statusCat": "done",
-              "duedate": null
-            },
-            {
-              "key": "LWVR-138",
-              "summary": "14. ES90000-04 고온고습시험(HAST) 진행",
-              "statusCat": "done",
-              "duedate": "2026-05-06"
-            },
-            {
-              "key": "LWVR-139",
-              "summary": "15. Assy 기능검사",
-              "statusCat": "done",
-              "duedate": null
-            },
-            {
-              "key": "LWVR-140",
-              "summary": "16. DV 시험 일정 고객 협의",
-              "statusCat": "done",
-              "duedate": null
-            }
-          ]
-        }
-      },
       {
         "key": "LWVR-53",
         "summary": "[TASK] LW 광촉매 승인도",
         "statusCat": "indeterminate",
-        "status": "검토",
+        "status": "진행 중",
         "duedate": "2026-07-09",
         "subtasks": {
           "done": 5,
@@ -158,7 +49,7 @@
         "key": "LWVR-83",
         "summary": "[TASK] LW 광촉매 부품도",
         "statusCat": "indeterminate",
-        "status": "검토",
+        "status": "진행 중",
         "duedate": "2026-07-10",
         "subtasks": {
           "done": 5,
@@ -201,7 +92,7 @@
         "key": "LWVR-79",
         "summary": "[TASK] LW 광촉매 3D모델링",
         "statusCat": "indeterminate",
-        "status": "검토",
+        "status": "진행 중",
         "duedate": "2026-07-10",
         "subtasks": {
           "done": 7,
@@ -215,7 +106,7 @@
             },
             {
               "key": "LWVR-146",
-              "summary": "2. LW 광촉매 승인도 수정(마운팅 길이 6mm 증대)",
+              "summary": "2. LW 광촉매 3D 모델링 수정(마운팅 길이 6mm 증대)",
               "statusCat": "done",
               "duedate": "2026-02-03"
             },
@@ -262,7 +153,7 @@
         "key": "LWVR-158",
         "summary": "[TASK] LW 광촉매 모듈 금형 검토",
         "statusCat": "indeterminate",
-        "status": "검토",
+        "status": "진행 중",
         "duedate": "2026-07-24",
         "subtasks": {
           "done": 6,
@@ -311,7 +202,7 @@
         "key": "LWVR-186",
         "summary": "[TASK] LW 광촉매 PROTO 실차 불량 검증 및 원인 분석 (남양연구소)",
         "statusCat": "indeterminate",
-        "status": "검토 중",
+        "status": "진행 중",
         "duedate": "2026-07-28",
         "subtasks": {
           "done": 0,
@@ -336,7 +227,7 @@
         "key": "LWVR-179",
         "summary": "[TASK] LW 광촉매 PCB 사양 검토",
         "statusCat": "indeterminate",
-        "status": "검토",
+        "status": "진행 중",
         "duedate": "2026-08-14",
         "subtasks": {
           "done": 0,
@@ -361,7 +252,7 @@
         "key": "LWVR-55",
         "summary": "[TESK] LW 광촉매 ESIR",
         "statusCat": "indeterminate",
-        "status": "검토",
+        "status": "진행 중",
         "duedate": "2026-08-14",
         "subtasks": {
           "done": 14,
@@ -470,7 +361,7 @@
         "key": "LWVR-190",
         "summary": "[TASK] LW 광촉매 자가진단 전압 검토",
         "statusCat": "indeterminate",
-        "status": "검토",
+        "status": "진행 중",
         "duedate": "2026-08-21",
         "subtasks": {
           "done": 1,
@@ -501,7 +392,7 @@
         "key": "LWVR-182",
         "summary": "[TASK] LW 광촉매 PCB COVER 소재 변경 및 검토",
         "statusCat": "indeterminate",
-        "status": "검토",
+        "status": "진행 중",
         "duedate": "2026-08-21",
         "subtasks": {
           "done": 0,
@@ -532,7 +423,7 @@
         "key": "LWVR-65",
         "summary": "[TASK] BOM",
         "statusCat": "indeterminate",
-        "status": "검토 중",
+        "status": "진행 중",
         "duedate": null,
         "subtasks": {
           "done": 3,
@@ -562,6 +453,18 @@
     ],
     "todo": [],
     "done": [
+      {
+        "key": "LWVR-41",
+        "summary": "[TASK] 광촉매 혼입방지 방안(완료)",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": null,
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
       {
         "key": "LWVR-59",
         "summary": "[TASK] D-FMEA(완료)",
@@ -686,6 +589,115 @@
         }
       },
       {
+        "key": "LWVR-86",
+        "summary": "[TASK] LW 광촉매 특허 침해 검토",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-06-30",
+        "subtasks": {
+          "done": 16,
+          "total": 16,
+          "items": [
+            {
+              "key": "LWVR-119",
+              "summary": "4. PCB Silicone Cover 검토",
+              "statusCat": "done",
+              "duedate": "2026-04-10"
+            },
+            {
+              "key": "LWVR-120",
+              "summary": "3. LED+전자소자 동일면 배치 검토",
+              "statusCat": "done",
+              "duedate": "2026-04-10"
+            },
+            {
+              "key": "LWVR-98",
+              "summary": "2. 특허 리스크 분석",
+              "statusCat": "done",
+              "duedate": "2026-03-20"
+            },
+            {
+              "key": "LWVR-87",
+              "summary": "1. LED 대체 검토(OSRAM-LB_P4SG)",
+              "statusCat": "done",
+              "duedate": "2026-01-26"
+            },
+            {
+              "key": "LWVR-129",
+              "summary": "5. PCB 아트웍(이슬 선임)",
+              "statusCat": "done",
+              "duedate": "2026-04-06"
+            },
+            {
+              "key": "LWVR-130",
+              "summary": "6. PCB 제작 (한샘)",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-131",
+              "summary": "7. Silicone Cover 3D 모델링",
+              "statusCat": "done",
+              "duedate": "2026-04-24"
+            },
+            {
+              "key": "LWVR-132",
+              "summary": "8. Silicone Cover 목업 제작",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-133",
+              "summary": "9. Silicone Cover 조립성 개선 2차 목업 제작",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-134",
+              "summary": "10. PC Cover 목업 제작",
+              "statusCat": "done",
+              "duedate": "2026-05-01"
+            },
+            {
+              "key": "LWVR-135",
+              "summary": "11. Silicone / PC Cover 조립성 검토",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-136",
+              "summary": "12. Silicone / PC Cover 양산 제작 가능 여부 및 양산 단가 검토",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-137",
+              "summary": "13. HALT / HAST 시험 일정 견적 검토",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-138",
+              "summary": "14. ES90000-04 고온고습시험(HAST) 진행",
+              "statusCat": "done",
+              "duedate": "2026-05-06"
+            },
+            {
+              "key": "LWVR-139",
+              "summary": "15. Assy 기능검사",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-140",
+              "summary": "16. DV 시험 일정 고객 협의",
+              "statusCat": "done",
+              "duedate": null
+            }
+          ]
+        }
+      },
+      {
         "key": "LWVR-89",
         "summary": "[TASK] LW 광촉매 VE(완료)",
         "statusCat": "done",
@@ -727,47 +739,16 @@
           "total": 2,
           "items": [
             {
-              "key": "LWVR-76",
-              "summary": "1. LW 광촉매 제품 사양서 작성",
-              "statusCat": "done",
-              "duedate": "2026-01-16"
-            },
-            {
               "key": "LWVR-72",
               "summary": "2. LW 광촉매 수주 현황 대표님 보고자료 작성",
               "statusCat": "done",
               "duedate": "2026-01-14"
-            }
-          ]
-        }
-      },
-      {
-        "key": "LWVR-41",
-        "summary": "[TASK] 광촉매 혼입방지 방안(완료)",
-        "statusCat": "done",
-        "status": "완료",
-        "duedate": null,
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
-        }
-      },
-      {
-        "key": "LWVR-125",
-        "summary": "[TASK] VR광촉매 15인승 차량 적용 수량 검토",
-        "statusCat": "done",
-        "status": "완료",
-        "duedate": "2026-04-03",
-        "subtasks": {
-          "done": 0,
-          "total": 1,
-          "items": [
+            },
             {
-              "key": "LWVR-126",
-              "summary": "ㅇ",
-              "statusCat": "indeterminate",
-              "duedate": null
+              "key": "LWVR-76",
+              "summary": "1. LW 광촉매 제품 사양서 작성",
+              "statusCat": "done",
+              "duedate": "2026-01-16"
             }
           ]
         }
