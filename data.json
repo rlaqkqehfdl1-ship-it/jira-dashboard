@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-30T22:01:14",
+  "updated": "2026-08-31T00:26:56",
   "lwvr": {
     "inprogress": [
       {
         "key": "LWVR-158",
         "summary": "LW 광촉매 모듈 금형 검토",
         "statusCat": "indeterminate",
-        "status": "진행 중 · 집중 진행",
+        "status": "진행중(집중)",
         "duedate": "2026-09-21",
         "subtasks": {
           "done": 6,
@@ -55,7 +55,7 @@
         "key": "LWVR-79",
         "summary": "LW 광촉매 3D모델링",
         "statusCat": "indeterminate",
-        "status": "진행 중 · 집중 진행",
+        "status": "진행중(집중)",
         "duedate": "2026-09-30",
         "subtasks": {
           "done": 7,
@@ -116,7 +116,7 @@
         "key": "LWVR-55",
         "summary": "LW 광촉매 ESIR",
         "statusCat": "indeterminate",
-        "status": "진행 중 · 결과 대기",
+        "status": "진행중(대기)",
         "duedate": "2026-12-18",
         "subtasks": {
           "done": 15,
@@ -736,7 +736,7 @@
         "key": "ZOPS-226",
         "summary": "JIRA 프로젝트 등록 및 관리 시스템 개편",
         "statusCat": "indeterminate",
-        "status": "진행 중 · 집중 진행",
+        "status": "진행중(대기)",
         "duedate": "2026-10-30",
         "subtasks": {
           "done": 0,
@@ -748,7 +748,7 @@
         "key": "ZOPS-227",
         "summary": "차세대 차량용 공기정화 모듈 선행개발",
         "statusCat": "indeterminate",
-        "status": "진행 중 · 집중 진행",
+        "status": "진행중(대기)",
         "duedate": "2026-12-31",
         "subtasks": {
           "done": 0,
@@ -760,7 +760,7 @@
         "key": "ZOPS-224",
         "summary": "ASPICE 문제해결 및 변경관리 프로세스 문서화",
         "statusCat": "indeterminate",
-        "status": "진행 중 · 집중 진행",
+        "status": "진행중(대기)",
         "duedate": "2026-12-31",
         "subtasks": {
           "done": 0,
