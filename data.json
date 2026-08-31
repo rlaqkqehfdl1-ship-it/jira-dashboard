@@ -1,62 +1,13 @@
 {
-  "updated": "2026-08-31T19:32:30",
+  "updated": "2026-08-31T23:19:43",
   "lwvr": {
     "inprogress": [
-      {
-        "key": "LWVR-158",
-        "summary": "LW 광촉매 모듈 금형 검토",
-        "statusCat": "indeterminate",
-        "status": "진행중(모니터링)",
-        "duedate": "2026-09-21",
-        "subtasks": {
-          "done": 6,
-          "total": 6,
-          "items": [
-            {
-              "key": "LWVR-159",
-              "summary": "1. LW 광촉매 PP-GF30 금형 PP-TD20 시사출 구매팀 문의",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-160",
-              "summary": "2. LW 광촉매 재질 베이스 결정 (PP-TD20 vs PP-GF30)",
-              "statusCat": "done",
-              "duedate": "2026-05-30"
-            },
-            {
-              "key": "LWVR-161",
-              "summary": "3. LW 광촉매 금형 유형 검토 (패밀리 vs 개별 - UPR/LWR/PC COVER)",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-162",
-              "summary": "4. LW 광촉매 금형 제작 방식 결정 (양산 vs QDM vs 시작)",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-169",
-              "summary": "5. LW 광촉매 양산 금형비 및 재료비단가 구매팀 검토",
-              "statusCat": "done",
-              "duedate": null
-            },
-            {
-              "key": "LWVR-170",
-              "summary": "6. LW 광촉매 금형 및 부품 단가 변경점 고객 협의",
-              "statusCat": "done",
-              "duedate": null
-            }
-          ]
-        }
-      },
       {
         "key": "LWVR-79",
         "summary": "LW 광촉매 3D모델링",
         "statusCat": "indeterminate",
-        "status": "진행중(모니터링)",
-        "duedate": "2026-09-30",
+        "status": "진행중(집중)",
+        "duedate": "2026-05-11",
         "subtasks": {
           "done": 7,
           "total": 8,
@@ -111,13 +62,15 @@
             }
           ]
         }
-      },
+      }
+    ],
+    "todo": [
       {
         "key": "LWVR-55",
         "summary": "LW 광촉매 ESIR",
-        "statusCat": "indeterminate",
-        "status": "진행중(대기)",
-        "duedate": "2026-12-18",
+        "statusCat": "new",
+        "status": "예정",
+        "duedate": "2026-06-12",
         "subtasks": {
           "done": 15,
           "total": 16,
@@ -222,35 +175,52 @@
         }
       }
     ],
-    "todo": [],
     "done": [
       {
-        "key": "LWVR-190",
-        "summary": "LW 광촉매 자가진단 전압 검토",
+        "key": "LWVR-158",
+        "summary": "LW 광촉매 모듈 금형 검토",
         "statusCat": "done",
         "status": "완료",
-        "duedate": "2026-08-21",
+        "duedate": "2026-05-30",
         "subtasks": {
-          "done": 3,
-          "total": 3,
+          "done": 6,
+          "total": 6,
           "items": [
             {
-              "key": "LWVR-191",
-              "summary": "전원 인가 후 자가진단 판단 전압 도달시간 검증",
+              "key": "LWVR-159",
+              "summary": "1. LW 광촉매 PP-GF30 금형 PP-TD20 시사출 구매팀 문의",
               "statusCat": "done",
-              "duedate": "2026-08-21"
+              "duedate": "2026-05-29"
             },
             {
-              "key": "LWVR-192",
-              "summary": "Pull-down 저항 유무별 자가진단 전압 측정 및 고객 회신",
+              "key": "LWVR-160",
+              "summary": "2. LW 광촉매 재질 베이스 결정 (PP-TD20 vs PP-GF30)",
               "statusCat": "done",
-              "duedate": "2026-08-13"
+              "duedate": "2026-05-30"
             },
             {
-              "key": "LWVR-193",
-              "summary": "ATCU–PCM 광촉매 모듈 인터페이스 매칭 확인",
+              "key": "LWVR-161",
+              "summary": "3. LW 광촉매 금형 유형 검토 (패밀리 vs 개별 - UPR/LWR/PC COVER)",
               "statusCat": "done",
-              "duedate": "2026-08-21"
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-162",
+              "summary": "4. LW 광촉매 금형 제작 방식 결정 (양산 vs QDM vs 시작)",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-169",
+              "summary": "5. LW 광촉매 양산 금형비 및 재료비단가 구매팀 검토",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-170",
+              "summary": "6. LW 광촉매 금형 및 부품 단가 변경점 고객 협의",
+              "statusCat": "done",
+              "duedate": null
             }
           ]
         }
@@ -260,7 +230,7 @@
         "summary": "LW 광촉매 PROTO 실차 불량 검증 및 원인 분석 (남양연구소)",
         "statusCat": "done",
         "status": "완료",
-        "duedate": "2026-07-28",
+        "duedate": null,
         "subtasks": {
           "done": 2,
           "total": 2,
@@ -285,7 +255,7 @@
         "summary": "LW 광촉매 PCB COVER 소재 변경 및 검토",
         "statusCat": "done",
         "status": "완료",
-        "duedate": "2026-08-21",
+        "duedate": null,
         "subtasks": {
           "done": 3,
           "total": 3,
@@ -312,11 +282,54 @@
         }
       },
       {
+        "key": "LWVR-83",
+        "summary": "LW 광촉매 부품도",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-07-24",
+        "subtasks": {
+          "done": 5,
+          "total": 5,
+          "items": [
+            {
+              "key": "LWVR-148",
+              "summary": "1. Case Upper 부품도",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-149",
+              "summary": "2. Case Lower 부품도",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-150",
+              "summary": "3. PCB Cover 부품도",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-151",
+              "summary": "4. Label 부품도",
+              "statusCat": "done",
+              "duedate": "2026-07-24"
+            },
+            {
+              "key": "LWVR-176",
+              "summary": "5. 특허 회피 사양 반영 부품도 드로잉 (PCB Assy)",
+              "statusCat": "done",
+              "duedate": null
+            }
+          ]
+        }
+      },
+      {
         "key": "LWVR-116",
         "summary": "LW 광촉매 PROTO SAMPLE 납품(완료)",
         "statusCat": "done",
         "status": "완료",
-        "duedate": null,
+        "duedate": "2026-03-20",
         "subtasks": {
           "done": 2,
           "total": 2,
@@ -337,11 +350,61 @@
         }
       },
       {
+        "key": "LWVR-59",
+        "summary": "D-FMEA(완료)",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-03-31",
+        "subtasks": {
+          "done": 1,
+          "total": 1,
+          "items": [
+            {
+              "key": "LWVR-110",
+              "summary": "1. LW광촉매 DFMEA",
+              "statusCat": "done",
+              "duedate": "2026-03-31"
+            }
+          ]
+        }
+      },
+      {
+        "key": "LWVR-65",
+        "summary": "BOM",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-01-30",
+        "subtasks": {
+          "done": 3,
+          "total": 3,
+          "items": [
+            {
+              "key": "LWVR-92",
+              "summary": "1. LW 광촉매 BOM 업체명 작성",
+              "statusCat": "done",
+              "duedate": "2026-01-30"
+            },
+            {
+              "key": "LWVR-95",
+              "summary": "2. BOM CASE  재질 추가",
+              "statusCat": "done",
+              "duedate": "2026-01-30"
+            },
+            {
+              "key": "LWVR-96",
+              "summary": "3. BOM CASE 중량 추가",
+              "statusCat": "done",
+              "duedate": "2026-01-30"
+            }
+          ]
+        }
+      },
+      {
         "key": "LWVR-89",
         "summary": "LW 광촉매 VE(완료)",
         "statusCat": "done",
         "status": "완료",
-        "duedate": null,
+        "duedate": "2026-01-30",
         "subtasks": {
           "done": 3,
           "total": 3,
@@ -372,7 +435,7 @@
         "summary": "LW 광촉매 특허 침해 검토",
         "statusCat": "done",
         "status": "완료",
-        "duedate": "2026-06-30",
+        "duedate": "2026-05-29",
         "subtasks": {
           "done": 16,
           "total": 16,
@@ -477,85 +540,11 @@
         }
       },
       {
-        "key": "LWVR-83",
-        "summary": "LW 광촉매 부품도",
-        "statusCat": "done",
-        "status": "완료",
-        "duedate": "2026-07-10",
-        "subtasks": {
-          "done": 5,
-          "total": 5,
-          "items": [
-            {
-              "key": "LWVR-148",
-              "summary": "1. Case Upper 부품도",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-149",
-              "summary": "2. Case Lower 부품도",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-150",
-              "summary": "3. PCB Cover 부품도",
-              "statusCat": "done",
-              "duedate": "2026-05-29"
-            },
-            {
-              "key": "LWVR-151",
-              "summary": "4. Label 부품도",
-              "statusCat": "done",
-              "duedate": "2026-07-24"
-            },
-            {
-              "key": "LWVR-176",
-              "summary": "5. 특허 회피 사양 반영 부품도 드로잉 (PCB Assy)",
-              "statusCat": "done",
-              "duedate": null
-            }
-          ]
-        }
-      },
-      {
-        "key": "LWVR-65",
-        "summary": "BOM",
-        "statusCat": "done",
-        "status": "완료",
-        "duedate": "2026-08-28",
-        "subtasks": {
-          "done": 3,
-          "total": 3,
-          "items": [
-            {
-              "key": "LWVR-92",
-              "summary": "1. LW 광촉매 BOM 업체명 작성",
-              "statusCat": "done",
-              "duedate": "2026-01-30"
-            },
-            {
-              "key": "LWVR-95",
-              "summary": "2. BOM CASE  재질 추가",
-              "statusCat": "done",
-              "duedate": "2026-01-30"
-            },
-            {
-              "key": "LWVR-96",
-              "summary": "3. BOM CASE 중량 추가",
-              "statusCat": "done",
-              "duedate": "2026-01-30"
-            }
-          ]
-        }
-      },
-      {
         "key": "LWVR-61",
         "summary": "LW 광촉매 PROTO 대응(완료)",
         "statusCat": "done",
         "status": "완료",
-        "duedate": "2026-05-29",
+        "duedate": "2026-03-31",
         "subtasks": {
           "done": 11,
           "total": 11,
@@ -630,30 +619,11 @@
         }
       },
       {
-        "key": "LWVR-59",
-        "summary": "D-FMEA(완료)",
-        "statusCat": "done",
-        "status": "완료",
-        "duedate": null,
-        "subtasks": {
-          "done": 1,
-          "total": 1,
-          "items": [
-            {
-              "key": "LWVR-110",
-              "summary": "1. LW광촉매 DFMEA",
-              "statusCat": "done",
-              "duedate": "2026-03-31"
-            }
-          ]
-        }
-      },
-      {
         "key": "LWVR-53",
         "summary": "LW 광촉매 승인도",
         "statusCat": "done",
         "status": "완료",
-        "duedate": "2026-07-09",
+        "duedate": "2026-05-29",
         "subtasks": {
           "done": 5,
           "total": 5,
@@ -692,23 +662,11 @@
         }
       },
       {
-        "key": "LWVR-41",
-        "summary": "광촉매 혼입방지 방안(완료)",
-        "statusCat": "done",
-        "status": "완료",
-        "duedate": null,
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
-        }
-      },
-      {
         "key": "LWVR-39",
         "summary": "LW 광촉매 KICK OFF(완료)",
         "statusCat": "done",
         "status": "완료",
-        "duedate": null,
+        "duedate": "2026-01-16",
         "subtasks": {
           "done": 2,
           "total": 2,
@@ -726,6 +684,49 @@
               "duedate": "2026-01-14"
             }
           ]
+        }
+      },
+      {
+        "key": "LWVR-190",
+        "summary": "LW 광촉매 자가진단 전압 검토",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-08-21",
+        "subtasks": {
+          "done": 3,
+          "total": 3,
+          "items": [
+            {
+              "key": "LWVR-191",
+              "summary": "전원 인가 후 자가진단 판단 전압 도달시간 검증",
+              "statusCat": "done",
+              "duedate": "2026-08-21"
+            },
+            {
+              "key": "LWVR-192",
+              "summary": "Pull-down 저항 유무별 자가진단 전압 측정 및 고객 회신",
+              "statusCat": "done",
+              "duedate": "2026-08-13"
+            },
+            {
+              "key": "LWVR-193",
+              "summary": "ATCU–PCM 광촉매 모듈 인터페이스 매칭 확인",
+              "statusCat": "done",
+              "duedate": "2026-08-21"
+            }
+          ]
+        }
+      },
+      {
+        "key": "LWVR-41",
+        "summary": "광촉매 혼입방지 방안(완료)",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": null,
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
         }
       }
     ]
@@ -767,10 +768,58 @@
           "total": 0,
           "items": []
         }
+      },
+      {
+        "key": "ZOPS-231",
+        "summary": "KPI 진척 현황 자료 작성",
+        "statusCat": "indeterminate",
+        "status": "진행중(모니터링)",
+        "duedate": null,
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
+      {
+        "key": "ZOPS-230",
+        "summary": "연구실 실태 조사 검증",
+        "statusCat": "indeterminate",
+        "status": "진행중(모니터링)",
+        "duedate": null,
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
+      {
+        "key": "ZOPS-229",
+        "summary": "Chat GPT PRO AI 품의 작성",
+        "statusCat": "indeterminate",
+        "status": "진행중(모니터링)",
+        "duedate": null,
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
       }
     ],
     "todo": [],
     "done": [
+      {
+        "key": "ZOPS-195",
+        "summary": "RS4 광촉매 CARB 시험 성적서 수정",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-08-21",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
       {
         "key": "ZOPS-228",
         "summary": "스마트공장 수준확인 심사보고서 자료 작성",
@@ -933,18 +982,6 @@
         "statusCat": "done",
         "status": "완료",
         "duedate": "2026-05-13",
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
-        }
-      },
-      {
-        "key": "ZOPS-195",
-        "summary": "RS4 광촉매 CARB 시험 성적서 수정",
-        "statusCat": "done",
-        "status": "완료",
-        "duedate": "2026-08-28",
         "subtasks": {
           "done": 0,
           "total": 0,
