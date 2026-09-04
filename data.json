@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T01:25:57",
+  "updated": "2026-09-04T06:20:01",
   "lwvr": {
     "inprogress": [
       {
@@ -62,29 +62,155 @@
             }
           ]
         }
-      }
-    ],
-    "todo": [
+      },
       {
         "key": "LWVR-144",
         "summary": "LW 광촉매 PCB Design Review",
-        "statusCat": "new",
-        "status": "예정",
+        "statusCat": "indeterminate",
+        "status": "진행중(모니터링)",
         "duedate": "2026-09-05",
         "subtasks": {
           "done": 0,
-          "total": 1,
+          "total": 2,
           "items": [
             {
               "key": "LWVR-195",
-              "summary": "PCB DR 자료 작성(기구물, 양산PCB 업체)",
-              "statusCat": "new",
+              "summary": "PCB DR 자료 작성(기구물)",
+              "statusCat": "indeterminate",
               "duedate": "2026-09-05"
+            },
+            {
+              "key": "LWVR-197",
+              "summary": "PCB DR 자료 작성(양산업체)",
+              "statusCat": "indeterminate",
+              "duedate": null
+            }
+          ]
+        }
+      },
+      {
+        "key": "LWVR-55",
+        "summary": "LW 광촉매 ESIR",
+        "statusCat": "indeterminate",
+        "status": "진행중(모니터링)",
+        "duedate": "2026-12-11",
+        "subtasks": {
+          "done": 15,
+          "total": 18,
+          "items": [
+            {
+              "key": "LWVR-122",
+              "summary": "4. LW 광촉매 DV 평가 항목,일정 정리",
+              "statusCat": "done",
+              "duedate": "2026-04-28"
+            },
+            {
+              "key": "LWVR-113",
+              "summary": "3. LW 광촉매 EMC TEST PLAN",
+              "statusCat": "done",
+              "duedate": "2026-03-17"
+            },
+            {
+              "key": "LWVR-94",
+              "summary": "1. LW 광촉매 ES 계획 수립",
+              "statusCat": "done",
+              "duedate": "2026-01-16"
+            },
+            {
+              "key": "LWVR-93",
+              "summary": "2. LW 광촉매 MS 계획 수립",
+              "statusCat": "done",
+              "duedate": "2026-01-16"
+            },
+            {
+              "key": "LWVR-152",
+              "summary": "5. 시험 중복 항목 자체 검토",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-153",
+              "summary": "6. 시료 / HVAC 필요 수량 검토",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-154",
+              "summary": "7. 시험 중복항목 고객 협의",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-155",
+              "summary": "8. LW 광촉매 시험 견적 접수",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-156",
+              "summary": "9. LW 광촉매 시험 품의 작성",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-157",
+              "summary": "DV 시험 진행",
+              "statusCat": "new",
+              "duedate": "2026-12-11"
+            },
+            {
+              "key": "LWVR-163",
+              "summary": "11. LW 광촉매 ESIR 실사",
+              "statusCat": "done",
+              "duedate": "2026-05-19"
+            },
+            {
+              "key": "LWVR-164",
+              "summary": "12. LW 광촉매 시험소 방문 (유로핀즈)",
+              "statusCat": "done",
+              "duedate": "2026-05-28"
+            },
+            {
+              "key": "LWVR-165",
+              "summary": "13. LW 광촉매 EMC 시험 (6/5~)",
+              "statusCat": "done",
+              "duedate": "2026-06-05"
+            },
+            {
+              "key": "LWVR-166",
+              "summary": "14. LW 광촉매 DV평가를 위한 양산 조건 PCB 제작",
+              "statusCat": "done",
+              "duedate": "2026-06-12"
+            },
+            {
+              "key": "LWVR-167",
+              "summary": "LED 파장대 변경 샘플 제공 요청 (광전자)",
+              "statusCat": "done",
+              "duedate": "2026-05-29"
+            },
+            {
+              "key": "LWVR-168",
+              "summary": "15. LW 광촉매 EMC 시험 준비 - 커넥터 사양 제작 (1.8M / 20cm)",
+              "statusCat": "done",
+              "duedate": "2026-06-05"
+            },
+            {
+              "key": "LWVR-199",
+              "summary": "DV 계획서 준비",
+              "statusCat": "indeterminate",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-200",
+              "summary": "DV 계획서 고객 검토",
+              "statusCat": "new",
+              "duedate": null
             }
           ]
         }
       }
     ],
+    "todo": [],
     "done": [
       {
         "key": "LWVR-190",
@@ -685,6 +811,18 @@
         "statusCat": "indeterminate",
         "status": "진행중(모니터링)",
         "duedate": "2026-12-31",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
+      {
+        "key": "ZOPS-232",
+        "summary": "NE2 TMD EOL#1",
+        "statusCat": "indeterminate",
+        "status": "진행중(모니터링)",
+        "duedate": null,
         "subtasks": {
           "done": 0,
           "total": 0,
