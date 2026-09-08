@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08T00:14:06",
+  "updated": "2026-09-08T04:45:09",
   "lwvr": {
     "inprogress": [
       {
@@ -64,31 +64,6 @@
         }
       },
       {
-        "key": "LWVR-144",
-        "summary": "LW 광촉매 PCB Design Review",
-        "statusCat": "indeterminate",
-        "status": "진행중(모니터링)",
-        "duedate": "2026-09-05",
-        "subtasks": {
-          "done": 0,
-          "total": 2,
-          "items": [
-            {
-              "key": "LWVR-195",
-              "summary": "PCB DR 자료 작성(기구물)",
-              "statusCat": "indeterminate",
-              "duedate": "2026-09-05"
-            },
-            {
-              "key": "LWVR-197",
-              "summary": "PCB DR 자료 작성(양산업체)",
-              "statusCat": "indeterminate",
-              "duedate": null
-            }
-          ]
-        }
-      },
-      {
         "key": "LWVR-55",
         "summary": "LW 광촉매 ESIR",
         "statusCat": "indeterminate",
@@ -96,7 +71,7 @@
         "duedate": "2026-12-11",
         "subtasks": {
           "done": 15,
-          "total": 18,
+          "total": 22,
           "items": [
             {
               "key": "LWVR-122",
@@ -205,6 +180,30 @@
               "summary": "DV 계획서 고객 검토",
               "statusCat": "new",
               "duedate": null
+            },
+            {
+              "key": "LWVR-201",
+              "summary": "CASE, PCB COVER 금형 제작",
+              "statusCat": "new",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-202",
+              "summary": "CASE, PCB COVER 시사출",
+              "statusCat": "new",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-203",
+              "summary": "CASE, COVER 치수 측정",
+              "statusCat": "new",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-204",
+              "summary": "DV용 커넥터 제작",
+              "statusCat": "new",
+              "duedate": null
             }
           ]
         }
@@ -212,6 +211,74 @@
     ],
     "todo": [],
     "done": [
+      {
+        "key": "LWVR-179",
+        "summary": "LW 광촉매 PCB 사양 검토",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-09-08",
+        "subtasks": {
+          "done": 3,
+          "total": 3,
+          "items": [
+            {
+              "key": "LWVR-180",
+              "summary": "PCB 가이드 사양 및 RS4 호환성 검토",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-181",
+              "summary": "PCB 변경 사양서 및 도면 반영",
+              "statusCat": "done",
+              "duedate": null
+            },
+            {
+              "key": "LWVR-196",
+              "summary": "BARE PCB DR 자료 작성",
+              "statusCat": "done",
+              "duedate": "2026-09-08"
+            }
+          ]
+        }
+      },
+      {
+        "key": "LWVR-198",
+        "summary": "원가절감 자료 작성 및 제출",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": null,
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
+      {
+        "key": "LWVR-144",
+        "summary": "LW 광촉매 PCB Design Review",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-09-05",
+        "subtasks": {
+          "done": 2,
+          "total": 2,
+          "items": [
+            {
+              "key": "LWVR-195",
+              "summary": "PCB DR 자료 작성(기구물)",
+              "statusCat": "done",
+              "duedate": "2026-09-05"
+            },
+            {
+              "key": "LWVR-197",
+              "summary": "PCB DR 자료 작성(양산업체)",
+              "statusCat": "done",
+              "duedate": null
+            }
+          ]
+        }
+      },
       {
         "key": "LWVR-190",
         "summary": "LW 광촉매 자가진단 전압 검토",
@@ -782,6 +849,18 @@
         }
       },
       {
+        "key": "ZOPS-229",
+        "summary": "Chat GPT PRO AI 품의 작성",
+        "statusCat": "indeterminate",
+        "status": "진행중(모니터링)",
+        "duedate": "2026-08-05",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
+      {
         "key": "ZOPS-230",
         "summary": "연구실 실태 조사 검증",
         "statusCat": "indeterminate",
@@ -821,31 +900,7 @@
         "key": "ZOPS-232",
         "summary": "NE2 TMD EOL#1",
         "statusCat": "indeterminate",
-        "status": "진행중(모니터링)",
-        "duedate": null,
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
-        }
-      },
-      {
-        "key": "ZOPS-231",
-        "summary": "KPI 진척 현황 자료 작성",
-        "statusCat": "indeterminate",
-        "status": "진행중(모니터링)",
-        "duedate": null,
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
-        }
-      },
-      {
-        "key": "ZOPS-229",
-        "summary": "Chat GPT PRO AI 품의 작성",
-        "statusCat": "indeterminate",
-        "status": "진행중(모니터링)",
+        "status": "진행중(대기)",
         "duedate": null,
         "subtasks": {
           "done": 0,
@@ -856,6 +911,18 @@
     ],
     "todo": [],
     "done": [
+      {
+        "key": "ZOPS-231",
+        "summary": "KPI 진척 현황 자료 작성",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": null,
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
       {
         "key": "ZOPS-228",
         "summary": "스마트공장 수준확인 심사보고서 자료 작성",
