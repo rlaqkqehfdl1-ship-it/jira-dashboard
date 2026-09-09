@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09T00:38:11",
+  "updated": "2026-09-09T05:16:34",
   "lwvr": {
     "inprogress": [
       {
@@ -861,18 +861,6 @@
         }
       },
       {
-        "key": "ZOPS-230",
-        "summary": "연구실 실태 조사 검증",
-        "statusCat": "indeterminate",
-        "status": "진행중(모니터링)",
-        "duedate": "2026-09-11",
-        "subtasks": {
-          "done": 0,
-          "total": 0,
-          "items": []
-        }
-      },
-      {
         "key": "ZOPS-226",
         "summary": "JIRA 프로젝트 등록 및 관리 시스템 개편",
         "statusCat": "indeterminate",
@@ -911,6 +899,18 @@
     ],
     "todo": [],
     "done": [
+      {
+        "key": "ZOPS-230",
+        "summary": "연구실 실태 조사 검증",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": "2026-09-11",
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
       {
         "key": "ZOPS-231",
         "summary": "KPI 진척 현황 자료 작성",
