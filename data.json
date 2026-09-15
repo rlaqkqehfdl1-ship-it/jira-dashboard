@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15T00:06:14",
+  "updated": "2026-09-15T04:48:17",
   "lwvr": {
     "inprogress": [
       {
@@ -924,6 +924,18 @@
     ],
     "todo": [],
     "done": [
+      {
+        "key": "ZOPS-233",
+        "summary": "광촉매 업무 인수인계서 작성",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": null,
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
       {
         "key": "ZOPS-229",
         "summary": "Chat GPT PRO AI 품의 작성",
