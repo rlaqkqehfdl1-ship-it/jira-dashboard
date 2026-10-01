@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T23:33:12",
+  "updated": "2026-10-01T02:21:30",
   "lwvr": {
     "inprogress": [
       {
@@ -912,6 +912,18 @@
     ],
     "todo": [],
     "done": [
+      {
+        "key": "ZOPS-235",
+        "summary": "RS4 광촉매 국내 사양 전후 비교 자료 작성 및 고객 송부",
+        "statusCat": "done",
+        "status": "완료",
+        "duedate": null,
+        "subtasks": {
+          "done": 0,
+          "total": 0,
+          "items": []
+        }
+      },
       {
         "key": "ZOPS-234",
         "summary": "JG 인버터 포팅지그 원가 절감",
