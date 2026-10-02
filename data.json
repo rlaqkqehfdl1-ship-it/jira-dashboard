@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T00:49:08",
+  "updated": "2026-10-02T06:20:00",
   "lwvr": {
     "inprogress": [
       {
@@ -70,7 +70,7 @@
         "status": "진행중(모니터링)",
         "duedate": "2026-12-11",
         "subtasks": {
-          "done": 15,
+          "done": 17,
           "total": 22,
           "items": [
             {
@@ -184,13 +184,13 @@
             {
               "key": "LWVR-201",
               "summary": "CASE, PCB COVER 금형 제작",
-              "statusCat": "new",
+              "statusCat": "done",
               "duedate": null
             },
             {
               "key": "LWVR-202",
               "summary": "CASE, PCB COVER 시사출",
-              "statusCat": "new",
+              "statusCat": "done",
               "duedate": null
             },
             {
