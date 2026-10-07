@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06T21:04:44",
+  "updated": "2026-10-07T00:38:12",
   "lwvr": {
     "inprogress": [
       {
@@ -901,7 +901,7 @@
         "key": "ZOPS-232",
         "summary": "NE2 TMD EOL#1",
         "statusCat": "indeterminate",
-        "status": "진행중(대기)",
+        "status": "진행중(모니터링)",
         "duedate": null,
         "subtasks": {
           "done": 0,
